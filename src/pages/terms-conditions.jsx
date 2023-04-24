@@ -9,7 +9,7 @@ function termsconditions() {
         <div className="pt-24 bg-gray-50 dark:bg-gray-800 bg-opacity-70 dark:bg-opacity-70 pb-20 px-3">
           <div className="max-w-7xl mx-auto py-12">
             <div className="text-center">
-              <div className="">
+              <div className=""> 
                 <div className="text-xl sm:text-6xl font-extrabold text-gray-700 dark:text-gray-50 capitalize"><span className="underline">Terms</span> <span className="text-xl md:text-3xl dark:text-gray-200">&</span><span className="text-xl sm:text-6xl font-extrabold text-yellow-600 capitalize"> Conditions</span></div>
                 
                 <div className="max-w-lg mx-auto mt-5 text-sm text-black dark:text-gray-200">
