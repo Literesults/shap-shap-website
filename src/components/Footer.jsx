@@ -2,8 +2,9 @@ import Image from 'next/image'
 import React from 'react'
 import { GrFacebookOption , GrTwitter , GrInstagram , GrYoutube } from 'react-icons/gr'
 import CityImg from '../../public/images/city.png'
-import playstore from '../../public/images/playStore.png'
-import appstore from '../../public/images/appStore.png'
+import google from '../../public/images/psA1TtmLqiU.jpg'
+import apple from '../../public/images/images.jpg'
+import instagram from '../../public/images/instagram.png'
 
 function Footer() {
     return (
@@ -72,13 +73,14 @@ function Footer() {
                             <div className="flex xl:justify-end gap-4">
                                 <div className="h-8 w-8 flex items-center justify-center rounded-md bg-white text-blue-600"><GrFacebookOption /></div>
                                 <div className="h-8 w-8 flex items-center justify-center rounded-md bg-white text-blue-500"><GrTwitter/></div>
-                                <div className="h-8 w-8 flex items-center justify-center rounded-md bg-white"><span className="bg-gradient-to-br from-red-500 via-orange-500 bg-clip-text to-blue-600"><GrInstagram/></span></div>
+                                <div className="h-8 w-8 flex items-center justify-center rounded-md bg-white">
+                                    <Image src={instagram} alt='' width={'25'} height={'25'} className="rounded-lg cursor-pointer" draggable="false" />
+                                </div>
                                 <div className="h-8 w-8 flex items-center justify-center rounded-md bg-white text-red-500"><GrYoutube/></div>
                             </div>
                             <div className="flex xl:justify-end flex-wrap gap-2">
-                                <Image src={playstore} alt="" className="rounded-lg cursor-pointer" />
-                                <span className="bg-white p-0 rounded-lg cursor-pointer"><Image src={appstore} alt="" className="rounded-lg" /></span>
-                                
+                                <Image src={google} alt='' width={'150'} height={'54'} className="rounded-lg cursor-pointer" draggable="false" />
+                                <Image src={apple} alt='' width={'150'} height={'54'} className="rounded-lg cursor-pointer" draggable="false" />
                             </div>
                         </div>
                     </div>

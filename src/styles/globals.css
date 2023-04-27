@@ -18,15 +18,48 @@ Image{
     @apply pointer-events-none
 }
 
-.bannerImg{
+/* .bannerImg{
     background-image: url('../../public/images/pngegg.png');
-    /* background-attachment:scroll; */
+    background-attachment:scroll;
     background-repeat: no-repeat;
     background-size: cover;
-}
+} */
 
 .bgImg{
-    background-image: url('../../public/images/driver-job-description.jpeg');
+    background-image: url('../../public/images/driver-job-description.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.bgAbt1{
+    background-image: url('../../public/images/taxi-safety.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center left;
+}
+.bgAbt2{
+    background-image: url('../../public/images/passenger-chatting.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.bgAbt3{
+    background-image: url('../../public/images/in-cab.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.bgImgRota{
+    background-image: url('../../public/images/pngegg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    transform: scaleY(-1);
+}
+
+.bgaboutImg{
+    background-image: url('../../public/images/drive.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;

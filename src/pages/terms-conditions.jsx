@@ -1,6 +1,6 @@
 import Layout from '@/components/Layout'
 import React from 'react'
-import banerIMg from '../../public/images/driver-job-description.jpeg'
+import banerIMg from '../../public/images/driver-job-description.jpg'
 
 function termsconditions() {
   return (
@@ -19,7 +19,7 @@ function termsconditions() {
           </div>
         </div>
       </div>
-      <div className="max-w-7xl px-3 mx-auto py-12 space-y-12">
+      <div className="max-w-7xl dark:text-gray-300 px-3 mx-auto py-12 space-y-12">
         <div className="space-y-3">
           <div className="text-lg font-bold dark:text-white">Terms & Conditions</div>
           <div className="space-y-5 text-sm md:text-base">
