@@ -35,6 +35,26 @@ function Faq() {
     },
   ])
 
+  useEffect(() => {
+    setActiveFaq(faq[0].category)
+    faq.forEach(ele => {
+      if (!faqOption.includes(ele.category)) {
+        faqOption.push(ele.category)
+      }
+    });
+  }, [faq, faqOption])
+
+  useEffect(() => {
+    let newfaq = []
+    for (let i = 0; i < faq.length; i++) {
+      if (faq[i].category == activeFaq) {
+        newfaq = [...newfaq, faq[i]];
+      }
+    }
+    closeD()
+    setCatDetailsData(newfaq)
+  }, [activeFaq, faq, faqOption])
+
 
   const dropDown = (index) => {
     if (!document.querySelectorAll('.allDetails')[0].children[index].children[1].children[0].classList.contains('hidden')) {
@@ -56,29 +76,16 @@ function Faq() {
     }
   }
 
-  const setcurrentfaq = () => {
-    let newfaq = []
-    for (let i = 0; i < faq.length; i++) {
-      if (faq[i].category == activeFaq) {
-        newfaq = [...newfaq, faq[i]];
-      }
-    }
-    closeD()
-    setCatDetailsData(newfaq)
-  }
-
-  useEffect(() => {
-    setActiveFaq(faq[0].category)
-    faq.forEach(ele => {
-      if (!faqOption.includes(ele.category)) {
-        faqOption.push(ele.category)
-      }
-    });
-  }, [faq, faqOption])
-
-  useEffect(() => {
-    setcurrentfaq()
-  }, [activeFaq, faqOption])
+  // const setcurrentfaq = () => {
+  //   let newfaq = []
+  //   for (let i = 0; i < faq.length; i++) {
+  //     if (faq[i].category == activeFaq) {
+  //       newfaq = [...newfaq, faq[i]];
+  //     }
+  //   }
+  //   closeD()
+  //   setCatDetailsData(newfaq)
+  // }
 
 
 
