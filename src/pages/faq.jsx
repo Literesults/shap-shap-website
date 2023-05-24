@@ -5,6 +5,8 @@ import { AiOutlineMinus } from 'react-icons/ai'
 import { HiOutlineChevronDown } from 'react-icons/hi'
 import React, { useEffect, useState } from 'react'
 import ContactCard from '@/components/ContactCard'
+import { GrPlay } from 'react-icons/gr'
+import { FiPlay } from 'react-icons/fi'
 
 function Faq() {
   const [activeFaq, setActiveFaq] = useState('')
@@ -83,20 +85,27 @@ function Faq() {
   return (
     <Layout active={'faq'}>
       <section className="">
-        <div className="pt-24 pb-20  bg-red-50 dark:bg-gray-900 px-3">
-          <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-5">
-            <div className="flex w-full items-center">
-              <div className="">
-                <div className="text-3xl dark:text-gray-200">Get a</div>
-                <div className="text-4xl sm:text-6xl font-extrabold text-gray-700 dark:text-gray-50 capitalize"><span className="underline">Quick</span> <span className="text-3xl dark:text-gray-200">and</span></div>
-                <div className="text-4xl sm:text-6xl font-extrabold text-yellow-600 capitalize"><span className="text-3xl dark:text-gray-200 text-gray-700">Confortable</span> Ride</div>
-                <div className="max-w-lg mt-5 text-gray-500">
-                  Lorem, ipsum dolor sit amet consectetur  nesciunt voluptatum eligendi magnam corrupti earum iusto nam illo inventore, dignissimos, sapiente atque officia aliquid ipsam!
+        <div className="faqBanner">
+          <div className="pt-24 pb-20 bg-black bg-opacity-25 backdrop-blur-md px-3">
+            <div className="max-w-7xl py-16 mx-auto grid grid-cols-1 md:grid-cols-2 gap-5">
+              <div className="flex w-full items-center">
+                <div className="">
+                  <div className="text-3xl text-gray-200">Get a</div>
+                  <div className="text-4xl sm:text-6xl font-extrabold text-gray-50 capitalize"><span className="underline">Quick</span> <span className="text-3xl text-gray-200">and</span></div>
+                  <div className="text-4xl sm:text-6xl font-extrabold text-yellow-600 capitalize"><span className="text-3xl text-gray-200">Confortable</span> Ride</div>
+                  <div className="max-w-lg mt-5 text-white">
+                    Lorem, ipsum dolor sit amet consectetur  nesciunt voluptatum eligendi magnam corrupti earum iusto nam illo inventore, dignissimos, sapiente atque officia aliquid ipsam!
+                  </div>
                 </div>
               </div>
-            </div>
-            <div className="">
-              {/* <Image src={img} alt="" srcSet="" draggable="false" /> */}
+              <div className="flex items-center gap-3">
+                <div className="bg-black md:bg-transparent flex items-center rounded-full gap-4 text-white ">
+                  <div className="h-16 relative after:absolute after:w-full after:h-full after:animate-ping after:rounded-full after:bg-white w-16 rounded-full border-2 border-white text-white flex items-center justify-center">
+                    <FiPlay className="relative left-[2px] text-white" />
+                  </div>
+                  <div className="pr-4 md:hidden">Watch Video</div>
+                </div>
+              </div>
             </div>
           </div>
         </div>

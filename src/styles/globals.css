@@ -81,6 +81,12 @@ Image {
 
 }
 
+.faqBanner{
+    background-image: url('../../public/images/in-cab.jpg');
+    background-repeat: repeat;
+    background-size: cover;
+}
+
 /* The animation code */
 @keyframes citymoves {
     0% {

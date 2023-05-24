@@ -29,6 +29,9 @@ export default function Home() {
                   <Image src={google} alt='' width={'150'} height={'54'} className="rounded-lg cursor-pointer" draggable="false" />
                   <Image src={apple} alt='' width={'150'} height={'54'} className="rounded-lg cursor-pointer" draggable="false" />
                 </div>
+                <div className="">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt dolorem accusamus eius voluptatum, laboriosam possimus repellat a sunt reprehenderit est ipsam! Quia animi, vero ratione asperiores earum repellendus commodi sed!
+                </div>
               </div>
               
             </div>
