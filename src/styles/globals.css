@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-.footerCityImg{
+.footerCityImg {
     position: relative;
     right: 0%;
     animation-name: citymoves;
@@ -11,10 +11,17 @@
 }
 
 
-div,p,input,textarea,img,body,hr{
-    @apply  transition-all duration-300 ease-in-out
+div,
+p,
+input,
+textarea,
+img,
+body,
+hr {
+    @apply transition-all duration-300 ease-in-out
 }
-Image{
+
+Image {
     @apply pointer-events-none
 }
 
@@ -25,52 +32,78 @@ Image{
     background-size: cover;
 } */
 
-.bgImg{
+.bgImg {
     background-image: url('../../public/images/driver-job-description.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 
-.bgAbt1{
+.bgAbt1 {
     background-image: url('../../public/images/taxi-safety.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center left;
 }
-.bgAbt2{
+
+.bgAbt2 {
     background-image: url('../../public/images/passenger-chatting.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
-.bgAbt3{
+
+.bgAbt3 {
     background-image: url('../../public/images/in-cab.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 
-.bgImgRota{
+.bgImgRota {
     background-image: url('../../public/images/pngegg.png');
     background-repeat: no-repeat;
     background-size: cover;
     transform: scaleY(-1);
 }
 
-.bgaboutImg{
+.bgaboutImg {
     background-image: url('../../public/images/drive.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 
+.banner {
+    background-image: url('../../public/images/bgImg.avif');
+    background-repeat: repeat;
+    background-size: cover;
+
+}
+
 /* The animation code */
 @keyframes citymoves {
-    0%   {right: 30%;}
-    20%  {right: 0%;}
-    40%  {right: 30%;}
-    60%  {right: 0%;}
-    80%  {right: 30%;}
-    100% {right: 0%;}
+    0% {
+        right: 30%;
+    }
+
+    20% {
+        right: 0%;
+    }
+
+    40% {
+        right: 30%;
+    }
+
+    60% {
+        right: 0%;
+    }
+
+    80% {
+        right: 30%;
+    }
+
+    100% {
+        right: 0%;
+    }
 }

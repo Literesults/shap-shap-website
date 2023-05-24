@@ -25,8 +25,8 @@ function ThemeToggler() {
 
 
     return (
-        <div className="bg-gray-700 dark:bg-white rounded-full w-12 h-6 relative p-1">
-            <div onClick={()=> toggleTheme()} className="absolute w-4 h-4 dark:right-1 rounded-full cursor-pointer bg-white dark:bg-gray-700"></div>
+        <div onClick={()=> toggleTheme()} className="bg-gray-700 dark:bg-white cursor-pointer rounded-full w-12 h-6 relative p-1">
+            <div className="absolute w-4 h-4 dark:right-1 rounded-full bg-white dark:bg-gray-700"></div>
         </div>
     )
 }

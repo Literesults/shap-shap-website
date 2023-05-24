@@ -83,7 +83,7 @@ function Faq() {
   return (
     <Layout active={'faq'}>
       <section className="">
-        <div className="pt-24 pb-20  bg-gray-50 dark:bg-gray-900 px-3">
+        <div className="pt-24 pb-20  bg-red-50 dark:bg-gray-900 px-3">
           <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-5">
             <div className="flex w-full items-center">
               <div className="">
@@ -96,7 +96,7 @@ function Faq() {
               </div>
             </div>
             <div className="">
-              <Image src={img} alt="" srcSet="" draggable="false" />
+              {/* <Image src={img} alt="" srcSet="" draggable="false" /> */}
             </div>
           </div>
         </div>

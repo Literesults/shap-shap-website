@@ -5,6 +5,7 @@ import CityImg from '../../public/images/city.png'
 import google from '../../public/images/psA1TtmLqiU.jpg'
 import apple from '../../public/images/images.jpg'
 import instagram from '../../public/images/instagram.png'
+import Link from 'next/link'
 
 function Footer() {
     return (
@@ -91,7 +92,7 @@ function Footer() {
                     <div className="w-72 flex items-center gap-4 text-gray-300">
                         <div className="cursor-pointer hover:text-white">Policy</div>
                         <div className="w-1 h-1 relative top-1 bg-slate-200 rounded-full"></div>
-                        <div className="cursor-pointer hover:text-white">Teams & Conditions</div>
+                        <Link href={'/terms-conditions'} className="cursor-pointer hover:text-white">Teams & Conditions</Link>
                     </div>
                 </div>
             </div>

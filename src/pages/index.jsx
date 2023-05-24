@@ -14,14 +14,14 @@ export default function Home() {
       <section>
         <HomeBanner />
         <div className="">
-          <div class="max-w-6xl w-11/12 md:w-auto gap-4 p-3 mx-auto grid md:grid-cols-2">
-            <div class="">
-              <div class="pb-16 space-y-4">
-                <div class="">
-                  <div class="text-3xl dark:text-white font-bold">
+          <div className="max-w-6xl w-11/12 md:w-auto gap-4 p-3 mx-auto grid md:grid-cols-2">
+            <div className="my-auto">
+              <div className="pb-16 space-y-4">
+                <div className="">
+                  <div className="text-3xl dark:text-white font-bold">
                     Getting The <span className="text-yellow-500">App</span>
                   </div>
-                  <p class="text-gray-700 text-sm py-10">
+                  <p className="text-gray-700 dark:text-gray-100 text-sm py-10">
                     A town hall different from bala blu, blue blu bulaba. broom broom broom brooooooooom. Bala blu blue blu bulaba. The farmers will make more money. Your lunch will not be imported, cassava garri ewa and ehhh ehhhhnn. The farmer will make money, the dinner would be cassava, eba, ewa and everything.
                   </p>
                 </div>
@@ -32,7 +32,7 @@ export default function Home() {
               </div>
               
             </div>
-            <div class="flex w-full items-center justify-center">
+            <div className="flex w-full items-center justify-center">
               <Image src={mockup} alt='' className="rounded-lg cursor-pointer w-auto h-full" draggable="false" />
             </div>
           </div>
