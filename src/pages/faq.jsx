@@ -99,7 +99,7 @@ function Faq() {
                 </div>
               </div>
               <div className="flex items-center gap-3">
-                <div className="bg-black md:bg-transparent flex items-center rounded-full gap-4 text-white ">
+                <div className="bg-black cursor-pointer md:bg-transparent flex items-center rounded-full gap-4 text-white ">
                   <div className="h-16 relative after:absolute after:w-full after:h-full after:animate-ping after:rounded-full after:bg-white w-16 rounded-full border-2 border-white text-white flex items-center justify-center">
                     <FiPlay className="relative left-[2px] text-white" />
                   </div>

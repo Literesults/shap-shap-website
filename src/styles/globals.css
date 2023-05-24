@@ -87,6 +87,20 @@ Image {
     background-size: cover;
 }
 
+.BecomeRider{
+    background-image: url('../../public/images/passenger-chatting.jpg');
+    background-repeat: repeat;
+    background-size: cover;
+}
+
+.testimonyBg{
+    background-image: url('../../public/images/atlas.png');
+    background-repeat: repeat;
+    background-size: cover;
+}
+
+/* passenger-chatting */
+
 /* The animation code */
 @keyframes citymoves {
     0% {

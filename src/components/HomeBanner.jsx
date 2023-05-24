@@ -9,15 +9,15 @@ function HomeBanner() {
         <div className="">
             <div className="h-screen banner">
                 <div className="h-full w-full absolute bg-gradient-to-r from-black via-transparent to-transparent">
-                    <div className="max-w-6xl relative mx-auto md:grid-cols-2 gap-5">
+                    <div className="max-w-7xl relative mx-auto md:grid-cols-2 gap-5">
                         <div className="flex w-full gap-5 h-screen items-center text-white">
                             <div className="space-y-5 px-3">
                                 <div className="text-2xl sm:text-4xl font-bold sm:space-y-2">
                                     <div className="space-y-1">
-                                        <div className="">Looking for a <span className="bg-white p-6 py-1 uppercase text-black">Quick</span></div>
+                                        <div className="">Looking for a <span className="bg-white p-6 py-[1px] uppercase text-black">Quick</span></div>
                                         <div className="text-yellow-400">Ride?</div>
                                         <div className="relative bottom-1">Ride With</div>
-                                        <div className=""><span className="bg-white p-6 py-1 uppercase text-black">Shap</span> Shap</div>
+                                        <div className=""><span className="bg-white p-6 py-[1px] uppercase text-black">Shap</span> Shap</div>
                                     </div>
                                 </div>
                                 <div className="max-w-md">
@@ -62,17 +62,23 @@ function HomeBanner() {
                                 <Image src={google} alt='' width={'150'} height={'54'} className="rounded-lg cursor-pointer" draggable="false" />
                                 <Image src={apple} alt='' width={'150'} height={'54'} className="rounded-lg cursor-pointer" draggable="false" />
                             </div>
-                            <div className="max-w-sm grid text-gray-300 dark:text-gray-500 grid-cols-2 gap-4">
+                            <div className="max-w-sm grid dark:text-gray-300 text-gray-600 grid-cols-3 gap-4">
                                 <div className="py-1 md:pb-20">
-                                    <div className="text-2xl font-bold">24/7</div>
+                                    <div className="text-2xl font-bold">24K +</div>
                                     <div className="text-base">
-                                        <div className="">Ride Availability</div>
+                                        <div className="">Customer</div>
+                                    </div>
+                                </div>
+                                <div className="py-1 md:pb-20">
+                                    <div className="text-2xl font-bold">24K +</div>
+                                    <div className="text-base">
+                                        <div className="">Riders</div>
                                     </div>
                                 </div>
                                 <div className="py-1 md:pb-20">
                                     <div className="text-2xl font-bold">24/7</div>
                                     <div className="text-base">
-                                        <div className="">Customer Service</div>
+                                        <div className="">Ride Availability</div>
                                     </div>
                                 </div>
                             </div>
