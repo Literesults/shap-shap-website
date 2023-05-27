@@ -78,6 +78,8 @@ Image {
     background-image: url('../../public/images/bgImg.avif');
     background-repeat: repeat;
     background-size: cover;
+    background-attachment: fixed;
+
 
 }
 
@@ -91,12 +93,14 @@ Image {
     background-image: url('../../public/images/passenger-chatting.jpg');
     background-repeat: repeat;
     background-size: cover;
+    background-attachment: fixed;
 }
 
 .testimonyBg{
     background-image: url('../../public/images/atlas.png');
     background-repeat: repeat;
     background-size: cover;
+    background-attachment: fixed;
 }
 
 /* passenger-chatting */

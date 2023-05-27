@@ -8,9 +8,10 @@ import mockup from '../../public/images/MobileMockup.png'
 import google from '../../public/images/psA1TtmLqiU.jpg'
 import apple from '../../public/images/images.jpg'
 import BecomeRider from "@/components/BecomeRider";
-import Testimony from "@/components/Testimony";
+import TopDrivers from "@/components/TopDrivers";
 
 export default function Home() {
+  
   return (
     <Layout active={'home'}>
       <section>
@@ -86,9 +87,9 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="">hhjhg</div>
+          <div className="">Trusted by</div>
         </div>
-        <Testimony />
+        <TopDrivers />
         <ContactCard />
       </section>
     </Layout>

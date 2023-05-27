@@ -17,7 +17,7 @@ function HomeBanner() {
                                         <div className="">Looking for a <span className="bg-white p-6 py-[1px] uppercase text-black">Quick</span></div>
                                         <div className="text-yellow-400">Ride?</div>
                                         <div className="relative bottom-1">Ride With</div>
-                                        <div className=""><span className="bg-white p-6 py-[1px] uppercase text-black">Shap</span> Shap</div>
+                                        <div className=""><span className="bg-white p-6 py-[1px] uppercase text-black">Shap</span> Cap</div>
                                     </div>
                                 </div>
                                 <div className="max-w-md">
@@ -29,7 +29,7 @@ function HomeBanner() {
                                 </div>
                             </div>
                         </div>
-                        <div className="absolute mx-auto bottom-24 w-full flex justify-center">
+                        <div className="absolute mx-auto bottom-6 w-full flex justify-center">
                             {/* <marquee direction="left" behavior="alternate">
                                 <marquee behavior="alternate"> */}
                                     <div className="space-x-4">
