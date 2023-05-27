@@ -53,7 +53,7 @@ function Testimony() {
             <div className="flex gap-3 flex-wrap">
               {
                 topDrivers.map((driver, index) => (
-                  <div className="inline-flex flex-wrap items-center gap-2 px-3 py-1 w-64 bg-white dark:bg-black rounded-md shadow-sm">
+                  <div key={index} className="inline-flex flex-wrap items-center gap-2 px-3 py-1 w-64 bg-white dark:bg-black rounded-md shadow-sm">
                     <div className="h-16 w-16 rounded-full bg-gray-400"></div>
                     <div className="leading-4">
                       <div className="font-bold dark:text-white">John Doe</div>
