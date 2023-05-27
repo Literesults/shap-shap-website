@@ -11,36 +11,36 @@ function HomeBanner() {
                 <div className="h-full w-full absolute bg-gradient-to-r from-black via-transparent to-transparent">
                     <div className="max-w-7xl relative mx-auto md:grid-cols-2 gap-5">
                         <div className="flex w-full gap-5 h-screen items-center text-white">
-                            <div className="space-y-5 px-3">
-                                <div className="text-2xl sm:text-4xl font-bold sm:space-y-2">
-                                    <div className="space-y-1">
-                                        <div className="">Looking for a <span className="bg-white p-6 py-[1px] uppercase text-black">Quick</span></div>
-                                        <div className="text-yellow-400">Ride?</div>
-                                        <div className="relative bottom-1">Ride With</div>
-                                        <div className=""><span className="bg-white p-6 py-[1px] uppercase text-black">Shap</span> Cap</div>
+                            <div className="space-y-5">
+                                <div className="px-3">
+                                    <div className="text-2xl sm:text-4xl font-bold sm:space-y-2">
+                                        <div className="space-y-1">
+                                            <div className="">Looking for a <span className="bg-white p-6 py-[1px] uppercase text-black">Quick</span></div>
+                                            <div className="text-yellow-400">Ride?</div>
+                                            <div className="relative bottom-1">Ride With</div>
+                                            <div className=""><span className="bg-white p-6 py-[1px] uppercase text-black">Shap</span> Cap</div>
+                                        </div>
+                                    </div>
+                                    <div className="max-w-md">
+                                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem assumenda magnam architecto dignissimos doloremque adipisci commodi est.
+                                    </div>
+                                    <div className="flex gap-5">
+                                        <Image src={google} alt='' width={'150'} height={'54'} className="rounded-lg cursor-pointer" draggable="false" />
+                                        <Image src={apple} alt='' width={'150'} height={'54'} className="rounded-lg cursor-pointer" draggable="false" />
                                     </div>
                                 </div>
-                                <div className="max-w-md">
-                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem assumenda magnam architecto dignissimos doloremque adipisci commodi est.
-                                </div>
-                                <div className="flex gap-5">
-                                    <Image src={google} alt='' width={'150'} height={'54'} className="rounded-lg cursor-pointer" draggable="false" />
-                                    <Image src={apple} alt='' width={'150'} height={'54'} className="rounded-lg cursor-pointer" draggable="false" />
+
+                                <div className="w-screen sm:w-auto relative">
+                                    <div className='flex w-full overflow-x-auto pb-3 gap-2'>
+                                        <div className="inline-block h-20 w-44 bg-red-500"></div>
+                                        <div className="inline-block h-20 w-44 bg-red-500"></div>
+                                        <div className="inline-block h-20 w-44 bg-red-500"></div>
+                                        <div className="inline-block h-20 w-44 bg-red-500"></div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div className="absolute mx-auto bottom-6 w-full flex justify-center">
-                            {/* <marquee direction="left" behavior="alternate">
-                                <marquee behavior="alternate"> */}
-                                    <div className="space-x-4">
-                                        <div className="inline-block h-20 w-44 bg-red-500"></div>
-                                        <div className="inline-block h-20 w-44 bg-red-500"></div>
-                                        <div className="inline-block h-20 w-44 bg-red-500"></div>
-                                        <div className="inline-block h-20 w-44 bg-red-500"></div>
-                                    </div>
-                                {/* </marquee>
-                            </marquee> */}
-                        </div>
+
                     </div>
                 </div>
             </div>
@@ -87,7 +87,7 @@ function HomeBanner() {
                     </div>
                 </div>
                 <div className="p-3 pt-0 w-full">
-                    <div className="relative -top-12 py-12 pt-0 max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-4 lg:grid-cols-3 gap-5">
+                    <div className="relative -top-2 py-12 pt-0 max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-4 lg:grid-cols-3 gap-5">
                         <div className="p-3 sm:col-span-2 lg:col-span-1 bg-white dark:bg-gray-700 shadow-lg">
                             <div className="border-b-4 pb-6 border-yellow-600">
                                 <div className="text-gray-200 dark:text-gray-500 text-2xl">01</div>

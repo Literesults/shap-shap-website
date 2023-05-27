@@ -47,10 +47,10 @@ function Testimony() {
   return (
     <div className="dark:bg-gray-800 bg-gray-50 py-8">
       <div className="max-w-6xl mx-auto">
-        <div className="text-2xl [fontFamily:MV_Boli] dark:text-white">Top Riders</div>
+        <div className="pl-12 md:pl-0 text-2xl [fontFamily:MV_Boli] dark:text-white">Top Riders</div>
         <div className="">
           <div className="w-full flex">
-            <div className="flex gap-3 flex-wrap">
+            <div className="flex justify-center gap-3 flex-wrap">
               {
                 topDrivers.map((driver, index) => (
                   <div key={index} className="inline-flex flex-wrap items-center gap-2 px-3 py-1 w-64 bg-white dark:bg-black rounded-md shadow-sm">
