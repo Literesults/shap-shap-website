@@ -21,12 +21,12 @@ function HomeBanner() {
                                             <div className=""><span className="bg-white p-6 py-[1px] uppercase text-black">Shap</span> Cap</div>
                                         </div>
                                     </div>
-                                    <div className="max-w-md">
+                                    <div className="max-w-md py-4">
                                         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem assumenda magnam architecto dignissimos doloremque adipisci commodi est.
                                     </div>
                                     <div className="flex gap-5">
-                                        <Image src={google} alt='' width={'150'} height={'54'} className="rounded-lg cursor-pointer" draggable="false" />
-                                        <Image src={apple} alt='' width={'150'} height={'54'} className="rounded-lg cursor-pointer" draggable="false" />
+                                        <Image src={google} alt='' width={'110'} height={'54'} className="rounded-lg cursor-pointer" draggable="false" />
+                                        <Image src={apple} alt='' width={'110'} height={'54'} className="rounded-lg cursor-pointer" draggable="false" />
                                     </div>
                                 </div>
 

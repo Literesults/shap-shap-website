@@ -70,8 +70,8 @@ function Footer() {
                     </div>
                     <div className="col-span-2 md:col-span-3 xl:col-span-2">
                         <div className="space-y-3">
-                            <div className="xl:text-right font-bold text-xl text-white">Social Media</div>
-                            <div className="flex xl:justify-end gap-4">
+                            <div className="text-center xl:text-right font-bold text-xl text-white">Social Media</div>
+                            <div className="flex justify-center xl:justify-end gap-4">
                                 <div className="h-8 w-8 flex items-center justify-center rounded-md bg-white text-blue-600"><GrFacebookOption /></div>
                                 <div className="h-8 w-8 flex items-center justify-center rounded-md bg-white text-blue-500"><GrTwitter/></div>
                                 <div className="h-8 w-8 flex items-center justify-center rounded-md bg-white">
@@ -79,16 +79,16 @@ function Footer() {
                                 </div>
                                 <div className="h-8 w-8 flex items-center justify-center rounded-md bg-white text-red-500"><GrYoutube/></div>
                             </div>
-                            <div className="flex xl:justify-end flex-wrap gap-2">
-                                <Image src={google} alt='' width={'150'} height={'54'} className="rounded-lg cursor-pointer" draggable="false" />
-                                <Image src={apple} alt='' width={'150'} height={'54'} className="rounded-lg cursor-pointer" draggable="false" />
+                            <div className="flex justify-center xl:justify-end flex-wrap gap-2">
+                                <Image src={google} alt='' width={'140'} height={'54'} className="rounded-lg cursor-pointer" draggable="false" />
+                                <Image src={apple} alt='' width={'140'} height={'54'} className="rounded-lg cursor-pointer" draggable="false" />
                             </div>
                         </div>
                     </div>
                 </div>
                 <hr className="w-[90%] mx-auto h-[2px]"/>
                 <div className="sm:flex gap-4 space-y-3 text-sm">
-                    <div className="flex-grow text-white font-semibold">Copyright &copy; 2023 - <span className="text-gray-400">Powered Shap-Shap </span></div>
+                    <div className="flex-grow text-white font-semibold">Copyright &copy; 2023 - <span className="text-gray-400">Shap Cap </span></div>
                     <div className="w-72 flex items-center gap-4 text-gray-300">
                         <div className="cursor-pointer hover:text-white">Policy</div>
                         <div className="w-1 h-1 relative top-1 bg-slate-200 rounded-full"></div>

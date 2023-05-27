@@ -10,7 +10,7 @@ function BookingRide() {
                 <div className="md:w-3/4 lg:ml-auto relative rounded-2xl lg:rounded-r-none mx-auto lg:mx-0 p-8 bg-yellow-100 dark:bg-gray-400 grid lg:grid-cols-3">
                     <div className="py-4">
                         <div className="lg:absolute lg:w-1/2 mx-auto h-full top-0 flex items-center lg:-left-44 xl:-left-72">
-                            <div className="bg-black w-full h-96 rounded-3xl overflow-hidden">
+                            <div className="bg-black w-full md:h-96 rounded-3xl overflow-hidden">
                                 <Image src={riding} alt="" srcSet="" className="w-full h-full" draggable="false" />
                             </div>
                         </div>
