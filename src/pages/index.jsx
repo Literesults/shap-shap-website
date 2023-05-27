@@ -89,8 +89,8 @@ export default function Home() {
           </div>
           <div className="">Trusted by</div>
         </div>
-        <TopDrivers />
-        <ContactCard />
+        {/* <TopDrivers />
+        <ContactCard /> */}
       </section>
     </Layout>
   )
