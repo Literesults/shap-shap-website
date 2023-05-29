@@ -88,7 +88,7 @@ function Footer() {
                 </div>
                 <hr className="w-[90%] mx-auto h-[2px]"/>
                 <div className="sm:flex gap-4 space-y-3 text-sm">
-                    <div className="flex-grow text-white font-semibold">Copyright &copy; 2023 - <span className="text-gray-400">Shap Cap </span></div>
+                    <div className="flex-grow text-white font-semibold">Copyright &copy; 2023 - <span className="text-gray-400">Shap Cab </span></div>
                     <div className="w-72 flex items-center gap-4 text-gray-300">
                         <div className="cursor-pointer hover:text-white">Policy</div>
                         <div className="w-1 h-1 relative top-1 bg-slate-200 rounded-full"></div>

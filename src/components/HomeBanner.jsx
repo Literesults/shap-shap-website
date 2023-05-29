@@ -18,7 +18,7 @@ function HomeBanner() {
                                             <div className="">Looking for a <span className="bg-white p-6 py-[1px] uppercase text-black">Quick</span></div>
                                             <div className="text-yellow-400">Ride?</div>
                                             <div className="relative bottom-1">Ride With</div>
-                                            <div className=""><span className="bg-white p-6 py-[1px] uppercase text-black">Shap</span> Cap</div>
+                                            <div className=""><span className="bg-white p-6 py-[1px] uppercase text-black">Shap</span> Cab</div>
                                         </div>
                                     </div>
                                     <div className="max-w-md py-4">
