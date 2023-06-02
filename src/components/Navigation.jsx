@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import NavLinks from './NavLinks';
 import ThemeToggler from './ThemeToggler';
-import logoLight from '../../public/images/logo.png';
+import logoLight from '../../public/images/Logo.png';
 import Logodark from '../../public/images/Logodark.png';
 import Image from 'next/image';
 
