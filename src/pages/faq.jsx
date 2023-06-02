@@ -86,7 +86,7 @@ function Faq() {
                 <div className="">
                   <div className="text-3xl text-gray-200">Get a</div>
                   <div className="text-4xl sm:text-6xl font-extrabold text-gray-50 capitalize"><span className="underline">Quick</span> <span className="text-3xl text-gray-200">and</span></div>
-                  <div className="text-4xl sm:text-6xl font-extrabold text-yellow-600 capitalize"><span className="text-3xl text-gray-200">Confortable</span> Ride</div>
+                  <div className="text-4xl sm:text-6xl font-extrabold text-yellow-600 capitalize"><span className="text-3xl text-gray-200">Comfortable</span> Ride</div>
                   <div className="max-w-lg mt-5 text-white">
                     Lorem, ipsum dolor sit amet consectetur  nesciunt voluptatum eligendi magnam corrupti earum iusto nam illo inventore, dignissimos, sapiente atque officia aliquid ipsam!
                   </div>
