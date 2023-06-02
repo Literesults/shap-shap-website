@@ -17,7 +17,7 @@ export default function Home() {
       <section>
         <HomeBanner />
         <div className="">
-          <div className="max-w-6xl w-11/12 md:w-auto gap-4 p-3 mx-auto grid md:grid-cols-2">
+          <div className="max-w-7xl w-11/12 md:w-auto gap-4 p-3 mx-auto grid md:grid-cols-2">
             <div className="my-auto">
               <div className="pb-16 space-y-4">
                 <div className="">

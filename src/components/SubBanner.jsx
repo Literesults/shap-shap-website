@@ -14,7 +14,7 @@ function SubBanner() {
         <div className="">
             <div>
                 <div className="pt-24 bg-gray-50 dark:bg-gray-900 px-3">
-                    <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-5">
+                    <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-5">
                         <div className="flex w-full gap-5 flex-col justify-center">
                             <div className="cursor-default">
                                 <div className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-gray-700 dark:text-gray-50 capitalize">Welcome  to<span className="text-yellow-600"> Shap</span></div>
@@ -62,8 +62,8 @@ function SubBanner() {
                         </div>
                     </div>
                 </div>
-                <div className="p-3 pt-0 w-full">
-                    <div className="relative -top-2 py-12 pt-0 max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-4 lg:grid-cols-3 gap-5">
+                <div className="p-3 pt-12 w-full">
+                    <div className="relative -top-2 py-12 pt-0 max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-4 lg:grid-cols-3 gap-5">
                         <div className="p-3 sm:col-span-2 lg:col-span-1 bg-white dark:bg-gray-700 shadow-lg">
                             <div className="pb-6 border-yellow-600">
                                 <div className="text-gray-200 dark:text-gray-500 text-3xl">01</div>

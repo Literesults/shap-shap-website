@@ -4,7 +4,7 @@ import map from '../../public/images/map.png'
 
 function Services() {
   return (
-    <div className="max-w-6xl mx-auto px-3 py-8 space-y-4">
+    <div className="max-w-7xl mx-auto px-3 py-8 space-y-4">
       <div className="">
         <div className="text-center text-4xl font-bold text-yellow-600 capitalize">Services</div>
         <div className="max-w-2xl mx-auto text-gray-400 text-center">

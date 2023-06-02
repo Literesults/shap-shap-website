@@ -40,11 +40,11 @@ function Navigation({ active }) {
     <div className="fixed dark:bg-black w-full top-0 z-50" style={{
       'backgroundColor': `rgba(${!isDark ? '255,255,255' : '0,0,0'},${scrollTop})`
     }}>
-      <div className="max-w-6xl mx-auto p-3 flex">
+      <div className="max-w-7xl mx-auto p-3 flex">
         <div className="flex-grow md:flex-grow-0">
           <Image src={logoLight} alt='' width={'80'} height={'54'} className="rounded-lg hidden dark:block cursor-pointer" draggable="false" />
           {
-            scrollTop < .3 ? <Image src={logoLight} alt='' width={'80'} height={'54'} className="rounded-lg dark:hidden cursor-pointer" draggable="false" /> : <Image src={Logodark} alt='' width={'80'} height={'54'} className="rounded-lg dark:hidden cursor-pointer" draggable="false" />
+            scrollTop < .3 ? <Image src={logoLight} alt='' width={'100'} height={'54'} className="rounded-lg dark:hidden cursor-pointer" draggable="false" /> : <Image src={Logodark} alt='' width={'80'} height={'54'} className="rounded-lg dark:hidden cursor-pointer" draggable="false" />
           }
 
         </div>

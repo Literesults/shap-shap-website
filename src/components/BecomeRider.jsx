@@ -25,7 +25,7 @@ function BecomeRider() {
         <div className="py-10">
             <div className="BecomeRider">
                 <div className=" bg-[radial-gradient(50%_50%_at_50%_50%,rgba(22,18,0,0.35)_0%,#161200_100%)]">
-                    <div className="max-w-6xl relative px-3 py-16 mx-auto grid grid-cols-1 md:grid-cols-2 gap-5">
+                    <div className="max-w-7xl relative px-3 py-16 mx-auto grid grid-cols-1 md:grid-cols-2 gap-5">
                         <div className="flex w-full items-center">
                             <div className="">
                                 <div className="text-gray-50 text-sm">Become a Rider</div>

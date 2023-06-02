@@ -46,7 +46,7 @@ function Testimony() {
 
   return (
     <div className="dark:bg-gray-800 bg-gray-50 py-8">
-      <div className="max-w-6xl mx-auto">
+      <div className="max-w-7xl mx-auto">
         <div className="pl-12 md:pl-0 text-2xl [fontFamily:MV_Boli] dark:text-white">Top Riders</div>
         <div className="">
           <div className="w-full flex">

@@ -8,7 +8,7 @@ function Banner() {
     return (
         <div className="h-screen banner">
             <div className="h-full w-full [background:linear-gradient(90.06deg,#050400_-1.71%,rgba(87,70,0,0.25)_56.42%,rgba(151,120,0,0.83)_113.82%)]">
-                <div className="max-w-6xl h-full mx-auto grid md:grid-cols-5">
+                <div className="max-w-7xl h-full mx-auto grid md:grid-cols-5">
                     <div className="md:col-span-3 flex items-center  h-full">
                         <div className="w-full p-3 space-y-4 text-white py-4">
                             <div className="relative top-4">Looking For A Quick Ride?</div>

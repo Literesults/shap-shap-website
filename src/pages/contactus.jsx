@@ -27,7 +27,7 @@ function contactus() {
     return (
         <Layout active={'contact us'}>
             <div>
-                <div className="pt-24 pb-20  bg-gray-50 dark:bg-gray-900 px-3">
+                <div className="pt-24 pb-20 bg-yellow-100 dark:bg-gray-900 px-3">
                     <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-5">
                         <div className="flex w-full items-center">
                             <div className="">
@@ -45,7 +45,7 @@ function contactus() {
                     </div>
                 </div>
                 <div className="p-3 pt-24">
-                    <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-3 mb-28">
+                    <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-3 mb-28">
                         <div className="my-auto px-8 sm:px-16 md:px-24 lg:px-0 lg:py-12">
                             <div className="shadow-lg text-white p-5 bg-black dark:bg-gray-800 rounded-lg divide-y relative top-24 lg:top-0 lg:left-32">
                                 <div className="py-2 cursor-pointer hover:text-gray-300">

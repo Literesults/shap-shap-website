@@ -7,8 +7,8 @@ import mockup from '../../public/images/Image13.png'
 function GetAppChip() {
     return (
         <div className="px-4 py-10">
-            <div className="max-w-6xl black-bg rounded-md w-11/12 md:w-auto gap-4 mx-auto grid md:grid-cols-2">
-                <div className="my-auto p-16 py-20">
+            <div className="max-w-7xl black-bg rounded-md md:w-auto gap-4 mx-auto grid md:grid-cols-2">
+                <div className="my-auto p-3 sm:p-16 py-20">
                     <div className="space-y-4">
                         <div className="space-y-3">
                             <div className="text-white">Your Journey Starts Here</div>
@@ -26,7 +26,7 @@ function GetAppChip() {
                         </div>
                     </div>
                 </div>
-                <div className="flex w-full items-center justify-center">
+                <div className="md:flex hidden w-full items-center justify-center">
                 <Image src={mockup} alt='' className="rounded-lg cursor-pointer h-full" draggable="false" />
                 </div>
             </div>
