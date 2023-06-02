@@ -1,11 +1,16 @@
 import React from 'react'
-import {TbTargetArrow} from 'react-icons/tb'
 
-function Bullets() {
+function Bullets({data}) {
   return (
     <div>
-        <div className="text-white font-bold flex gap-1 items-center text-xl"><TbTargetArrow size={'19px'} className="relative top-[2px]" /> Title</div>
-        <div className="pl-6 text-white max-w-lg text-sm">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, blanditiis? Distinctio accusamus facilis, aliquam</div>
+        <div className="p-8 py-2 pt-0 leading-4 border-l-2 border-dashed border-white relative before:absolute before:w-5 before:bg-gray-400 before:h-5 before:-top-1 before:rounded-full before:-left-[10px] after:absolute after:w-3 after:bg-white after:h-3 after:-top-[0px] after:rounded-full after:-left-[6.1px]">
+            <div className="font-bold text-white text-xl relative bottom-2">
+              {data?.step}
+            </div>
+            <div className="max-w-lg text-gray-300 text-xs relative bottom-1">
+               {data?.Description}
+            </div>
+        </div>
     </div>
   )
 }

@@ -11,6 +11,24 @@
 }
 
 
+.bannerMockup {
+    position: relative;
+    right: 0%;
+    top: -30%;
+    animation-name: bannerMockupAninmate;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+.bannerMockup2 {
+    position: relative;
+    right: 0%;
+    bottom: -30%;
+    animation-name: bannerMockupAninmate2;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
 div,
 p,
 input,
@@ -60,11 +78,11 @@ Image {
     background-position: center;
 }
 
-.bgImgRota {
-    background-image: url('../../public/images/pngegg.png');
+.black-bg{
+    background-image: url('../../public/images/Whitebbg1.png');
     background-repeat: no-repeat;
     background-size: cover;
-    transform: scaleY(-1);
+    background-position: center;
 }
 
 .bgaboutImg {
@@ -75,7 +93,7 @@ Image {
 }
 
 .banner {
-    background-image: url('../../public/images/bgImg.avif');
+    background-image: url('../../public/images/Herobg.png');
     background-repeat: repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -90,7 +108,7 @@ Image {
 }
 
 .BecomeRider{
-    background-image: url('../../public/images/passenger-chatting.jpg');
+    background-image: url('../../public/images/Becomearider.png');
     background-repeat: repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -129,5 +147,58 @@ Image {
 
     100% {
         right: 0%;
+    }
+}
+
+
+@keyframes bannerMockupAninmate {
+    0% {
+        top: -30%;
+    }
+
+    20% {
+        top: 0%;
+    }
+
+    40% {
+        top: 30%;
+    }
+
+    60% {
+        top: 0%;
+    }
+
+    80% {
+        top: -30%;
+    }
+
+    100% {
+        top: 0%;
+    }
+}
+
+@keyframes bannerMockupAninmate2 {
+    0% {
+        bottom: -30%;
+    }
+
+    20% {
+        bottom: 0%;
+    }
+
+    40% {
+        bottom: 30%;
+    }
+
+    60% {
+        bottom: 0%;
+    }
+
+    80% {
+        bottom: -30%;
+    }
+
+    100% {
+        bottom: 0%;
     }
 }

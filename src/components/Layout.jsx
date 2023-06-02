@@ -1,12 +1,15 @@
 import React from 'react'
 import Navigation from './Navigation'
 import Footer from './Footer'
+import ContactCard from './ContactCard'
 
-function Layout({children,active}) {
+function Layout({ children, active }) {
     return (
-        <div className="overflow-x-hidden">
+        <div onScroll={() => handleScroll()} className="overflow-x-hidden">
             <Navigation active={active} />
-            <div className="min-h-screen pt-12">{children}</div>
+            <div className="min-h-screen">{children}</div>
+
+            <ContactCard />
             <Footer />
         </div>
     )
