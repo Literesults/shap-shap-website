@@ -7,16 +7,18 @@ import { BiUserCircle } from 'react-icons/bi'
 import extraImg from '../../public/images/business-desktop.png'
 import { serialize } from '@/hooks/Serilize'
 import axios from 'axios'
+import { notifier } from 'react-toast-notifier';
 
 
 function contactus() {
     const sendFeedBack = (e) => {
         e.preventDefault()
         const data = serialize(e.target)
-        console.log(data);
         const base = 'https://api.hmxexpress.com/api';
+        const form = document.getElementById('feedBackForm')
         axios.post(`${base}/support/send-feedback`, data ).then((res) => {
-            console.log(res);
+            notifier({ type: "success", message: res.data.message , autoDismissTimeout:5000 });
+            form.reset()
         }).catch((error) => {
             console.log(error.response);
         })
@@ -76,8 +78,7 @@ function contactus() {
                                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem et amet enim ipsa adipisci, consequuntur sunt deleniti nesciunt quibusdam temporibus laborum ipsam rerum earum ea quia facilis nobis vitae soluta!
                                     </div>
                                 </div>
-                                <form onSubmit={sendFeedBack} className="px-3 md:px-16 py-8 space-y-3">
-                                    {/* <input type="hidden" name="contact" value="" /> */}
+                                <form onSubmit={sendFeedBack} id="feedBackForm" className="px-3 md:px-16 py-8 space-y-3">
                                     <FormInput Icon={<BiUserCircle size={'24px'} />} name={'name'} placeholder={'Enter Fullname'} type={'text'} />
                                     <FormInput Icon={<BiUserCircle size={'24px'} />} name={'contact_info'} placeholder={'Enter Phone or Mail'} type={'text'} />
                                     <FormTextArea Icon={<BiUserCircle size={'24px'} />} name={'message'} placeholder={'Write Your Message here'} />

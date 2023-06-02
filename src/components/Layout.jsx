@@ -2,13 +2,14 @@ import React from 'react'
 import Navigation from './Navigation'
 import Footer from './Footer'
 import ContactCard from './ContactCard'
+import Notification from 'react-toast-notifier';
 
 function Layout({ children, active }) {
     return (
         <div onScroll={() => handleScroll()} className="overflow-x-hidden">
+            <Notification />
             <Navigation active={active} />
             <div className="min-h-screen">{children}</div>
-
             <ContactCard />
             <Footer />
         </div>
