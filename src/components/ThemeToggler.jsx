@@ -1,6 +1,6 @@
 import React from 'react'
 
-function ThemeToggler() {
+function ThemeToggler({isDark}) {
     // this will check the current state of your browser if it 
     // is dark it will set the initial theme state as dark else it will be light mode
     if (typeof window !== 'undefined') {
@@ -21,6 +21,7 @@ function ThemeToggler() {
             localStorage.theme = 'dark'
             htmlClasses.add('dark')
         }
+        isDark()
     }
 
 

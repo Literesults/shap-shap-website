@@ -60,7 +60,7 @@ function Navigation({ active }) {
             </div>
             <div className="flex py-12 md:py-0 px-4 md:px-0 gap-3 items-center">
               {/* <div>extra</div> */}
-              <ThemeToggler />
+              <ThemeToggler isDark={()=>setIsDark(!isDark)} />
             </div>
             </div>
           </div>
