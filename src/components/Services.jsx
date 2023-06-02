@@ -8,7 +8,7 @@ function Services() {
       <div className="">
         <div className="text-center text-4xl font-bold text-yellow-600 capitalize">Services</div>
         <div className="max-w-2xl mx-auto text-gray-400 text-center">
-          Shap Cab is more than just a ride-sharing app. Explore our comprehensive suite of services designed to cater to your diverse transportation needs. Whether you're commuting to work, heading to the airport, or planning a night out, we have you covered with our exceptional offerings.
+          Shap Cab is more than just a ride-sharing app. Explore our comprehensive suite of services designed to cater to your diverse transportation needs. Whether you&apos;re commuting to work, heading to the airport, or planning a night out, we have you covered with our exceptional offerings.
         </div>
       </div>
       <div className="w-full px-3 max-w-7xl mx-auto">
@@ -34,7 +34,7 @@ function Services() {
           </div>
           <div className="flex gap-3 items-end w-full py-5">
             <div className="flex-grow text-gray-400  lg:text-right order-1 lg:order-none first-line:uppercase first-line:tracking-widest first-letter:font-bold">
-              Group Transportation <br /> Traveling with a group? Our spacious and well-equipped vehicles are perfect for group transportation. Whether it's a family outing or a team-building event, we ensure everyone travels together comfortably.
+              Group Transportation <br /> Traveling with a group? Our spacious and well-equipped vehicles are perfect for group transportation. Whether it&apos;s a family outing or a team-building event, we ensure everyone travels together comfortably.
             </div>
             <div className="">
               <div className="h-16 w-16 rounded-xl flex justify-center items-center text-white lg:text-black bg-yellow-500 lg:bg-opacity-50 lg:dark:text-gray-100 lg:bg-gray-200 text-2xl leading-4" style={{ 'fontFamily': 'impact' }}>03</div>

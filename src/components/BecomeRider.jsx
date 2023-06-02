@@ -41,7 +41,7 @@ function BecomeRider() {
                             </div>
                         </div>
                         <div className="md:absolute bottom-0 right-0 w-[340px] flex md:items-center md:justify-center">
-                            <Image src={img} className="md:absolute hidden md:block bottom-0 right-6" />
+                            <Image src={img} alt='#' className="md:absolute hidden md:block bottom-0 right-6" />
                             <div className="">
                                 <div className="bg-black cursor-pointer md:bg-transparent md:relative bottom-44 right-4 flex items-center rounded-full gap-4 text-white ">
                                     <div className="h-16 relative after:absolute after:w-full after:h-full bg-white after:animate-ping after:rounded-full after:bg-black w-16 rounded-full border-2 border-white text-white flex items-center justify-center">

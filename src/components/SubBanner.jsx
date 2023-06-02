@@ -22,7 +22,7 @@ function SubBanner() {
                             </div>
                             <div className="">
                                 <div className="max-w-sm dark:text-white">
-                                The cutting-edge solution for all your transportation needs. With our advanced ride-sharing app, we're revolutionizing the way you travel, ensuring that every journey is smooth, convenient, and tailored to your preferences.
+                                The cutting-edge solution for all your transportation needs. With our advanced ride-sharing app, we&apos;re revolutionizing the way you travel, ensuring that every journey is smooth, convenient, and tailored to your preferences.
                                 </div>
                             </div>
                             <div className="flex gap-5">

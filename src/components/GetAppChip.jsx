@@ -17,7 +17,7 @@ function GetAppChip() {
                                 <div className=""> <span className="text-white">Cab</span> App Today! </div>
                             </div>
                             <p className="text-gray-300 text-sm max-w-md">
-                                Ready to embark on a new era of transportation? Download the Sharp Ride app and gain access to a world of convenience, reliability, and extraordinary rides. With just a few taps, you'll unlock the power to travel seamlessly and explore without limits.
+                                Ready to embark on a new era of transportation? Download the Sharp Ride app and gain access to a world of convenience, reliability, and extraordinary rides. With just a few taps, you&apos;ll unlock the power to travel seamlessly and explore without limits.
                             </p>
                         </div>
                         <div className="flex gap-5">
