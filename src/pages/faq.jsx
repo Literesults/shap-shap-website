@@ -1,11 +1,8 @@
 import Layout from '@/components/Layout'
-import Image from 'next/image'
-import img from '../../public/images/fun-3d.png'
 import { AiOutlineMinus } from 'react-icons/ai'
 import { HiOutlineChevronDown } from 'react-icons/hi'
 import React, { useEffect, useState } from 'react'
 import ContactCard from '@/components/ContactCard'
-import { GrPlay } from 'react-icons/gr'
 import { FiPlay } from 'react-icons/fi'
 
 function Faq() {
@@ -76,16 +73,6 @@ function Faq() {
     }
   }
 
-  // const setcurrentfaq = () => {
-  //   let newfaq = []
-  //   for (let i = 0; i < faq.length; i++) {
-  //     if (faq[i].category == activeFaq) {
-  //       newfaq = [...newfaq, faq[i]];
-  //     }
-  //   }
-  //   closeD()
-  //   setCatDetailsData(newfaq)
-  // }
 
 
 
@@ -172,7 +159,6 @@ function Faq() {
             </div>
           </div>
         </div>
-        <ContactCard />
       </section>
     </Layout>
   )

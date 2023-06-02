@@ -5,7 +5,7 @@ import booking from '../../public/images/ride-booker.png'
 
 function ContactCard() {
   return (
-    <div className="max-w-6xl mx-auto  px-3 py-24">
+    <div className="max-w-5xl mx-auto  px-3 py-24">
         <div className="bg-yellow-600 rounded-lg shadow-lg px-4 relative overflow-hidden text-white">
             <div className="grid grid-cols-1 md:grid-cols-2 md:place-items-end">
                 <div className="py-20 px-4">
