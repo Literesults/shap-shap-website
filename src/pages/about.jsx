@@ -14,7 +14,7 @@ function about() {
   return (
     <Layout active={'About Us'}>
       <div className="abtBg">
-        <div className="h-screen flex w-full items-center [background:linear-gradient(90.03deg,#0E0B00_-1.33%,rgba(137,110,1,0.13)_48.95%,#171300_108.86%)]">
+        <div className="h-[75vh] flex w-full items-center [background:linear-gradient(90.03deg,#0E0B00_-1.33%,rgba(137,110,1,0.13)_48.95%,#171300_108.86%)]">
           <div className="w-full">
             <div className="max-w-7xl px-2 space-y-4 text-white mx-auto py-5">
               <div className="[letter-spacing:0.175em]">Welcome To Shap Cab</div>
@@ -30,7 +30,7 @@ function about() {
         </div>
       </div>
       <div className="px-3">
-        <div className="max-w-3xl mx-auto flex gap-5 sm:gap-16 md:gap-x-28 relative bottom-7 sm:bottom-16 grid-cols-4 justify-center py-4 sm:py-9 bg-white rounded-lg shadow-md">
+        <div className="max-w-3xl mx-auto sm:flex gap-5 sm:gap-16 md:gap-x-28 relative bottom-7 sm:bottom-16 grid grid-cols-2 sm:grid-cols-4 justify-center py-4 sm:py-9 dark:bg-gray-800 dark:text-white bg-white rounded-lg shadow-md">
           <div className="text-center">
             <div className="font-[1000] md:text-2xl">24+</div>
             <div className="text-xs sm:text-xs md:text-base">Customer</div>
@@ -49,13 +49,13 @@ function about() {
           </div>
         </div>
       </div>
-      <div className="grid p-3 sm:grid-cols-2 gap-8 items-center mx-auto max-w-5xl py-28">
+      <div className="grid p-3 sm:grid-cols-2 gap-8 items-center mx-auto max-w-5xl pb-28">
         <div className="sm:order-1 space-y-5">
           <div className="font-[1000] text-3xl md:text-5xl">
             <div className="dark:text-white">Driven by</div>
             <div className="text-yellow-500">Innovation</div>
           </div>
-          <div className="text-gray-400 max-w-md text-sm">
+          <div className="text-gray-400 max-w-md">
             Our passion for innovation fuels everything we do. We leverage cutting-edge technology to provide you with a seamless and convenient ride-sharing experience. From our intuitive app to real-time tracking and secure payment options, we&apos;re constantly pushing boundaries to ensure your journey is as smooth as possible.
           </div>
         </div>
@@ -74,7 +74,7 @@ function about() {
               <div className="text-white">A Community of</div>
               <div className="text-yellow-500">Riders</div>
             </div>
-            <div className="text-gray-400 max-w-md text-sm">
+            <div className="text-gray-50 max-w-md">
               Our passion for innovation fuels everything we do. We leverage cutting-edge technology to provide you with a seamless and convenient ride-sharing experience. From our intuitive app to real-time tracking and secure payment options, we&apos;re constantly pushing boundaries to ensure your journey is as smooth as possible.
             </div>
           </div>
@@ -93,7 +93,7 @@ function about() {
             <div className="dark:text-white">Safety is Our</div>
             <div className="text-yellow-500">Priority</div>
           </div>
-          <div className="text-gray-400 max-w-md text-sm">
+          <div className="text-gray-400 max-w-md">
             Your safety is our utmost priority. We go to great lengths to ensure that every ride you take with Shap Ride is secure and comfortable. Our drivers undergo rigorous background checks, and our vehicles are meticulously maintained to guarantee your peace of mind throughout your journey.
           </div>
         </div>
@@ -113,7 +113,7 @@ function about() {
               <div className="text-white">Exceptional</div>
               <div className="text-yellow-500">Service, Every Time</div>
             </div>
-            <div className="text-gray-400 max-w-md text-sm">
+            <div className="text-gray-50 max-w-md">
               We believe that exceptional service is the key to customer satisfaction. Our team of professional drivers is dedicated to providing you with the highest standard of service, ensuring that each ride exceeds your expectations. From prompt pickups to courteous assistance, we strive to make your experience with Shap Ride unforgettable.
             </div>
           </div>
@@ -133,7 +133,7 @@ function about() {
             <div className="dark:text-white">Connecting</div>
             <div className="text-yellow-500">Communities</div>
           </div>
-          <div className="text-gray-400 max-w-md text-sm">
+          <div className="text-gray-400 max-w-md">
             At Shap Ride, we understand that transportation plays a vital role in connecting people and communities. Whether you&apos;re traveling to work, exploring a new city, or simply enjoying a night out, our platform is designed to bring people together, foster connections, and make your journeys more enjoyable.
           </div>
         </div>
@@ -153,7 +153,7 @@ function about() {
               <div className="text-white">Join the Shap Ride</div>
               <div className="text-yellow-500">Revolution</div>
             </div>
-            <div className="text-gray-400 max-w-md text-sm">
+            <div className="text-gray-50 max-w-md">
               Experience the future of transportation with Sharp Ride. Download our app today and unlock a world of seamless journeys, reliable service, and unforgettable experiences. Join us as we redefine transportation and create a better way to travel.
             </div>
           </div>

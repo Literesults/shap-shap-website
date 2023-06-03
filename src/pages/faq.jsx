@@ -3,7 +3,6 @@ import { AiOutlineMinus } from 'react-icons/ai'
 import { HiOutlineChevronDown } from 'react-icons/hi'
 import { TbZoomQuestion } from 'react-icons/tb'
 import React, { useEffect, useState } from 'react'
-import { FiPlay } from 'react-icons/fi'
 import axios from 'axios'
 
 function Faq() {
@@ -19,27 +18,6 @@ function Faq() {
   useEffect(() => {
     fetchFaq()
   }, [])
-  
-
-  // useEffect(() => {
-  //   setActiveFaq(faq[0].category)
-  //   faq.forEach(ele => {
-  //     if (!faqOption.includes(ele.category)) {
-  //       faqOption.push(ele.category)
-  //     }
-  //   });
-  // }, [faq, faqOption])
-
-  // useEffect(() => {
-  //   let newfaq = []
-  //   for (let i = 0; i < faq.length; i++) {
-  //     if (faq[i].category == activeFaq) {
-  //       newfaq = [...newfaq, faq[i]];
-  //     }
-  //   }
-  //   closeD()
-  //   setCatDetailsData(newfaq)
-  // }, [activeFaq, faq, faqOption])
 
 
   const dropDown = (index) => {
@@ -62,45 +40,20 @@ function Faq() {
     }
   }
 
-
-
-
   return (
     <Layout active={'faq'}>
       <section className="">
-        <div className="faqBanner">
-          <div className="pt-24 pb-20 bg-black bg-opacity-25 backdrop-blur-md px-3">
-            <div className="max-w-7xl py-16 mx-auto grid grid-cols-1 md:grid-cols-2 gap-5">
-              <div className="flex w-full items-center">
-                <div className="">
-                  <div className="text-3xl text-gray-200">Get a</div>
-                  <div className="text-4xl sm:text-6xl font-extrabold text-gray-50 capitalize"><span className="underline">Quick</span> <span className="text-3xl text-gray-200">and</span></div>
-                  <div className="text-4xl sm:text-6xl font-extrabold text-yellow-600 capitalize"><span className="text-3xl text-gray-200">Comfortable</span> Ride</div>
-                  <div className="max-w-lg mt-5 text-white">
-                    Lorem, ipsum dolor sit amet consectetur  nesciunt voluptatum eligendi magnam corrupti earum iusto nam illo inventore, dignissimos, sapiente atque officia aliquid ipsam!
-                  </div>
-                </div>
-              </div>
-              <div className="flex items-center gap-3">
-                <div className="bg-black cursor-pointer md:bg-transparent flex items-center rounded-full gap-4 text-white ">
-                  <div className="h-16 relative after:absolute after:w-full after:h-full after:animate-ping after:rounded-full after:bg-white w-16 rounded-full border-2 border-white text-white flex items-center justify-center">
-                    <FiPlay className="relative left-[2px] text-white" />
-                  </div>
-                  <div className="pr-4 md:hidden">Watch Video</div>
-                </div>
-              </div>
+        <div className="abtBg">
+          <div className="[background:linear-gradient(90.06deg,#050400_-1.71%,rgba(87,70,0,0.25)_56.42%,rgba(151,120,0,0.83)_113.82%)] space-y-6 py-20">
+            <div className="text-center text-4xl font-bold text-white capitalize"  >frequently asked questions</div>
+            <div className="max-w-2xl mx-auto text-gray-200 text-center">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi tempore possimus reiciendis doloribus impedit rem distinctio quam pariatur officiis facilis omnis reprehenderit, dignissimos laborum veritatis ipsam! Explicabo quia quam voluptates?
             </div>
           </div>
         </div>
         <div className="p-3 pt-24">
           <div className="max-w-7xl space-y-12 mx-auto">
-            <div className="">
-              <div className="text-center text-4xl font-bold text-yellow-600 capitalize"  >frequently asked questions</div>
-              <div className="max-w-2xl mx-auto text-gray-400 text-center">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi tempore possimus reiciendis doloribus impedit rem distinctio quam pariatur officiis facilis omnis reprehenderit, dignissimos laborum veritatis ipsam! Explicabo quia quam voluptates?
-              </div>
-            </div>
-            <div className="max-w-3xl space-y-8 px-3 mx-auto py-10">
+            <div className="max-w-3xl space-y-8 px-3 mx-auto">
               <div className="">
                 <div className="max-w-3xl bg-white dark:text-white dark:border-gray-600 dark:bg-gray-800 rounded-lg overflow-hidden border relative">
                   <div className="absolute top-2 left-2">

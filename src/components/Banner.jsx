@@ -24,7 +24,7 @@ function Banner() {
                             </div>
                         </div>
                     </div>
-                    <div className="col-span-2 hidden h-screen overflow-hidden lg:grid grid-cols-2 gap-6">
+                    <div className="col-span-2 hidden h-screen overflow-hidden lg:grid grid-cols-2 gap-16">
                         <div className="h-[200%] relative bottom-96 overflow-hidden space-y-6">
                             <div className="h-1/3 bannerMockup"><Image alt='' src={mockup} className="h-full w-full" /></div>
                             <div className="h-1/3 bannerMockup"><Image alt='' src={mockup} className="h-full w-full" /></div>
