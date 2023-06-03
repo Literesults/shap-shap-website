@@ -3,7 +3,7 @@ import React from 'react'
 
 function BlogCard({data}) {
     return (
-        <div className="space-y-3">
+        <div className="space-y-3 mb-3">
             <div className="h-44 bg-gray-400 rounded-md">
                 <Image src={`${data.image}`} alt='#' width={'100'} height={'100'} className='w-full h-full' />
             </div>

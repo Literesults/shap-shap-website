@@ -92,6 +92,13 @@ Image {
     background-position: center;
 }
 
+.abtBg {
+    background-image: url('../../public/images/unsplash.png');
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position:left left left ;
+}
+
 .banner {
     background-image: url('../../public/images/Herobg.png');
     background-repeat: repeat;

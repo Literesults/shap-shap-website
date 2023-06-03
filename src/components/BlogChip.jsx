@@ -39,6 +39,7 @@ function BlogChip() {
                     ))
                 }
             </div>
+            <div className="max-w-[120px] py-2 text-center mx-auto bg-yellow-500 hover:bg-yellow-400 cursor-pointer text-white">More Blogs</div>
         </div>
     </div>
   )

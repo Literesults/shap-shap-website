@@ -26,27 +26,10 @@ function contactus() {
 
     return (
         <Layout active={'contact us'}>
-            <div>
-                <div className="pt-24 pb-20 bg-yellow-100 dark:bg-gray-900 px-3">
-                    <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-5">
-                        <div className="flex w-full items-center">
-                            <div className="">
-                                <div className="text-3xl dark:text-gray-200">Get a</div>
-                                <div className="text-4xl sm:text-6xl font-extrabold text-gray-700 dark:text-gray-50 capitalize"><span className="underline">Quick</span> <span className="text-3xl dark:text-gray-200">and</span></div>
-                                <div className="text-4xl sm:text-6xl font-extrabold text-yellow-600 capitalize"><span className="text-3xl dark:text-gray-200 text-gray-700">Confortable</span> Ride</div>
-                                <div className="max-w-lg mt-5 text-gray-500">
-                                    Lorem, ipsum dolor sit amet consectetur  nesciunt voluptatum eligendi magnam corrupti earum iusto nam illo inventore, dignissimos, sapiente atque officia aliquid ipsam!
-                                </div>
-                            </div>
-                        </div>
-                        <div className="">
-                            <Image src={extraImg} alt='' className="rounded-lg cursor-pointer w-full h-full" draggable="false" />
-                        </div>
-                    </div>
-                </div>
-                <div className="p-3 pt-24">
-                    <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-3 mb-28">
-                        <div className="my-auto px-8 sm:px-16 md:px-24 lg:px-0 lg:py-12">
+            <div className="abtBg">
+                <div className="p-3 pt-24 [background:linear-gradient(90.03deg,#0E0B00_-1.33%,rgba(137,110,1,0.13)_48.95%,#171300_108.86%)]">
+                    <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-3 mb-16">
+                        <div className="my-auto sm:px-16 md:px-24 lg:px-0 lg:py-12">
                             <div className="shadow-lg text-white p-5 bg-black dark:bg-gray-800 rounded-lg divide-y relative top-24 lg:top-0 lg:left-32">
                                 <div className="py-2 cursor-pointer hover:text-gray-300">
                                     <div className="">E-mail</div>
