@@ -92,6 +92,13 @@ Image {
     background-position: center;
 }
 
+.blogImg{
+    background-image: url('../../public/images/technology-coffee-internet-beverage-cafe-data-concept.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center left;
+}
+
 .abtBg {
     background-image: url('../../public/images/unsplash.png');
     background-repeat: no-repeat;

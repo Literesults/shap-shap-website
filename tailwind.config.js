@@ -16,6 +16,7 @@ module.exports = {
       },
       colors: {
         'shap': {
+          800: '#E09800',
           900: '#231f1d',
         },
       }

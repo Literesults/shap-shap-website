@@ -60,6 +60,7 @@ function Navigation({ active }) {
                 <NavLinks route="/contactus" title="Contact us" active={active} />
                 {/* <NavLinks route="/terms-conditions" title="Terms-Conditions" active={active} /> */}
                 <NavLinks route="/faq" title="Faq" active={active} />
+                <NavLinks route="/blogs" title="Blog" active={active} />
               </div>
               <div className="flex py-12 md:py-0 px-4 relative md:px-0 gap-3 items-center">
                 <div className="hidden md:block absolute right-14"><RiderBtn /></div>
