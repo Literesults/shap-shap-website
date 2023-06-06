@@ -6,7 +6,7 @@ import Image from 'next/image'
 import BlogCard from '@/components/BlogCard'
 import Link from 'next/link'
 
-function index() {
+function Index() {
     const [recentBlog,setRecentBlog] = useState([
         {
             id: 1 ,
@@ -83,4 +83,4 @@ function index() {
     )
 }
 
-export default index
+export default Index
