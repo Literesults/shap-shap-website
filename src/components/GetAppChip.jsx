@@ -1,13 +1,18 @@
 import Image from 'next/image'
-import React from 'react'
+import React, { useEffect } from 'react'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import google from '../../public/images/psA1TtmLqiU.jpg'
 import apple from '../../public/images/images.jpg'
 import mockup from '../../public/images/Image13.png'
 
 function GetAppChip() {
+    useEffect(() => {
+        AOS.init();
+    }, [])
     return (
         <div className="px-4 py-10">
-            <div className="max-w-7xl black-bg rounded-md md:w-auto gap-4 mx-auto grid md:grid-cols-2">
+            <div data-aos="zoom-in-down" className="max-w-7xl black-bg rounded-md md:w-auto gap-4 mx-auto grid md:grid-cols-2">
                 <div className="my-auto p-3 sm:p-16 py-20">
                     <div className="space-y-4">
                         <div className="space-y-3">

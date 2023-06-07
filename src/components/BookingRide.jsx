@@ -1,9 +1,14 @@
 import Image from 'next/image'
-import React from 'react'
+import React, { useEffect } from 'react'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import riding from '../../public/images/Rectangle10.png'
 import RideProcess from './RideProcess'
 
 function BookingRide() {
+    useEffect(() => {
+        AOS.init();
+    }, [])
     const process = [
         {
             step: "Select Your Destination",
@@ -21,9 +26,9 @@ function BookingRide() {
     return (
         <div className="py-10">
             <div className="py-8 px-3 lg:px-0">
-                <div className="md:w-3/4 lg:ml-auto relative rounded-2xl lg:rounded-r-none mx-auto lg:mx-0 p-8 bg-yellow-100 dark:bg-gray-400 grid lg:grid-cols-3">
+                <div data-aos="fade-left" className="md:w-3/4 lg:ml-auto relative rounded-2xl lg:rounded-r-none mx-auto lg:mx-0 p-8 bg-yellow-100 dark:bg-gray-400 grid lg:grid-cols-3">
                     <div className="py-4">
-                        <div className="lg:absolute lg:w-1/2 mx-auto h-full top-0 flex items-center lg:-left-64">
+                        <div data-aos="fade-right" className="lg:absolute lg:w-1/2 mx-auto h-full top-0 flex items-center lg:-left-64">
                             <div className=" w-full md:h-96 rounded-3xl overflow-hidden">
                                 <Image src={riding} alt="" srcSet="" className="w-full h-full" draggable="false" />
                             </div>

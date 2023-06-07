@@ -49,10 +49,6 @@ function BecomeRider() {
             Description: "Once approved, attend an orientation session to familiarize yourself with our platform, policies, and best practices."
         },
         {
-            step: "Safety First",
-            Description: "Your safety and the safety of your passengers are our top priorities. We implement rigorous screening processes, real-time GPS tracking, and a dedicated support team to ensure a secure and comfortable ride experience."
-        },
-        {
             step: "Start Driving and Earning",
             Description: "Once your profile is approved, you're ready to hit the road! Log into the Sharp Ride driver app and start accepting ride requests. Navigate the city with the help of our user-friendly app, picking up passengers and providing them with exceptional service. Enjoy the flexibility to choose your own working hours and maximize your earnings."
         }
@@ -67,7 +63,7 @@ function BecomeRider() {
     return (
         <Layout active={''}>
             <div className="abtBg">
-                <div className="h-[75vh] flex w-full items-center [background:linear-gradient(90.03deg,#0E0B00_-1.33%,rgba(137,110,1,0.13)_48.95%,#171300_108.86%)]">
+                <div className="h-[60vh] flex w-full items-center [background:linear-gradient(90.03deg,#0E0B00_-1.33%,rgba(137,110,1,0.13)_48.95%,#171300_108.86%)]">
                     <div className="w-full">
                         <div className="max-w-7xl px-2 space-y-4 text-white mx-auto py-5">
                             <div className="[letter-spacing:0.175em]">Become a Shap Cab Ride Driver</div>
@@ -119,7 +115,7 @@ function BecomeRider() {
 
             <div className="bg-black dark:bg-gray-800 py-16 ">
                 <div className="md:grid-cols-2 items-center grid gap-6 max-w-7xl mx-auto">
-                    <div className="space-y-6">
+                    <div className="space-y-6 p-3">
                         <div className="font-[1000] text-2xl md:text-4xl">
                             <div className="text-shap-800">Requirements to <span className="text-white">Become a </span></div>
                             <div className="text-white">Driver</div>

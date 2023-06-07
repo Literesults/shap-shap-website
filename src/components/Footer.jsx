@@ -32,18 +32,21 @@ function Footer() {
                         <div className="max-w-sm text-white font-bold text-3xl">Join our newsletter to keep up to date with us</div>
                     </div>
                     <div className="flex w-80 rounded-lg overflow-hidden">
-                        <button className="bg-black lg:order-1 text-white px-4 py-2">Subscribe</button>
+                        <button className="bg-black order-1 text-white px-4 py-2">Subscribe</button>
                         <div className="flex-grow"><input type="text" className="w-full border-0 focus:outline-none focus:ring-0 px-4 h-full ring-0" /></div>
                     </div>
                 </div>
-                <hr className="w-[90%] mx-auto h-[1px]" />
+                <hr className="w-[98%] border-gray-600 mx-auto h-[1px]" />
                 <div className="lg:flex space-y-4 items-center gap-4">
                     <div className="flex-grow space-y-4">
                         <div className="text-3xl pb-3 text-white">
                             <Image src={logoLight} alt='' width={'80'} height={'104'} className="rounded-lg dark:block cursor-pointer" draggable="false" />
                         </div>
-                        <div className="text-white text-xl font-bold">Shap <span className="bg-white px-4 py-1 text-black">Cab</span></div>
                         <div className="space-y-3">
+                            <div className="flex flex-wrap gap-2">
+                                <Image src={google} alt='' width={'140'} height={'54'} className="rounded-lg cursor-pointer" draggable="false" />
+                                <Image src={apple} alt='' width={'140'} height={'54'} className="rounded-lg cursor-pointer" draggable="false" />
+                            </div>
                             <div className="flex gap-4">
                                 <div className="h-8 w-8 flex items-center justify-center rounded-md bg-white text-blue-600"><GrFacebookOption /></div>
                                 <div className="h-8 w-8 flex items-center justify-center rounded-md bg-white text-blue-500"><GrTwitter /></div>
@@ -51,10 +54,6 @@ function Footer() {
                                     <Image src={instagram} alt='' width={'25'} height={'25'} className="rounded-lg cursor-pointer" draggable="false" />
                                 </div>
                                 <div className="h-8 w-8 flex items-center justify-center rounded-md bg-white text-red-500"><GrYoutube /></div>
-                            </div>
-                            <div className="flex flex-wrap gap-2">
-                                <Image src={google} alt='' width={'140'} height={'54'} className="rounded-lg cursor-pointer" draggable="false" />
-                                <Image src={apple} alt='' width={'140'} height={'54'} className="rounded-lg cursor-pointer" draggable="false" />
                             </div>
                         </div>
                     </div>
@@ -67,7 +66,7 @@ function Footer() {
                                 <Link href={'/faq'} className="cursor-pointer hover:text-white">FAQ&apos;s</Link>
                             </div>
                         </div>
-                        <div className="">
+                        <div className="space-y-4">
                             <div className="text-white font-bold text-xl">Legal</div>
                             <div className="flex flex-col gap-2 text-gray-400">
                                 <Link href={'/blogs'} className="cursor-pointer hover:text-white">Drivers Agreement</Link>
@@ -83,7 +82,7 @@ function Footer() {
                         <div className=""></div>
                     </div>
                 </div>
-                <hr className="w-[90%] mx-auto h-[2px]" />
+                <hr className="w-[98%] border-gray-600 mx-auto h-[2px]" />
                 <div className="sm:flex gap-4 space-y-3 text-sm">
                     <div className="flex-grow text-white font-semibold">Copyright &copy; 2023 - <span className="text-gray-400">Shap Cab </span></div>
                     <div className="w-72 flex items-center gap-4 text-gray-300">

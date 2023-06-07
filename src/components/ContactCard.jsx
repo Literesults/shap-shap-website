@@ -1,12 +1,17 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import React from 'react'
+import React, { useEffect } from 'react'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import booking from '../../public/images/ride-booker.png'
 
 function ContactCard() {
+    useEffect(() =>{
+        AOS.init();
+    },[])
   return (
     <div className="max-w-5xl mx-auto  px-3 py-24">
-        <div className="bg-yellow-600 rounded-lg shadow-lg px-4 relative overflow-hidden text-white">
+        <div data-aos="zoom-out" className="bg-yellow-600 rounded-lg shadow-lg px-4 relative overflow-hidden text-white">
             <div className="grid grid-cols-1 md:grid-cols-2 md:place-items-end">
                 <div className="py-20 px-4">
                     <div className="uppercase text-4xl font-bold">get in touch now</div>

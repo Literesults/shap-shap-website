@@ -4,8 +4,13 @@ import { HiOutlineChevronDown } from 'react-icons/hi'
 import { TbZoomQuestion } from 'react-icons/tb'
 import React, { useEffect, useState } from 'react'
 import axios from 'axios'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 function Faq() {
+  useEffect(() =>{
+      AOS.init();
+  },[])
   const [faq, setFaq] = useState([])
   const base = 'https://api.hmxexpress.com/api';
 
@@ -67,7 +72,7 @@ function Faq() {
                   <div className="divide-y allDetails">
                     {
                       faq.map((data, i) => (
-                        <div className="p-3 flex" key={i} role="button" onClick={() => dropDown(i)}>
+                        <div data-aos="fade-up" className="p-3 flex" key={i} role="button" onClick={() => dropDown(i)}>
                           <div className="flex-grow space-y-2 dark:text-gray-200 cursor-pointer">
                             <div className="first-letter:uppercase">{data.question}</div>
                             <div className="text-gray-400 text-sm hidden transition-all duration-300">{data.answer}</div>

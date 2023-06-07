@@ -23,7 +23,7 @@ function BlogChip() {
                     <div className="text-yellow-500 font-[700]">Blog</div>
                     <div className="dark:text-white text-4xl md:text-6xl font-extrabold ">Recent <span className="text-yellow-500">Post</span></div>
                 </div>
-                <div className="max-w-5xl py-4 mx-auto grid px-3 sm:grid-cols-2 md:grid-cols-3 gap-7">
+                <div className="max-w-6xl py-4 mx-auto grid px-3 sm:grid-cols-2 md:grid-cols-3 gap-7">
                     {
                         recentBlog.map((blog, index) => (
                             <BlogCard data={blog} key={index} />

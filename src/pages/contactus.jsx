@@ -2,15 +2,20 @@ import FormInput from '@/components/FormInput'
 import FormTextArea from '@/components/FormTextArea'
 import Layout from '@/components/Layout'
 import Image from 'next/image'
-import React from 'react'
+import React, { useEffect } from 'react'
 import { BiUserCircle } from 'react-icons/bi'
 import extraImg from '../../public/images/business-desktop.png'
 import { serialize } from '@/hooks/Serilize'
 import axios from 'axios'
 import { notifier } from 'react-toast-notifier';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 
 function contactus() {
+    useEffect(() =>{
+        AOS.init();
+    },[])
     const sendFeedBack = (e) => {
         e.preventDefault()
         const data = serialize(e.target)
@@ -29,7 +34,7 @@ function contactus() {
             <div className="abtBg">
                 <div className="p-3 pt-24 [background:linear-gradient(90.03deg,#0E0B00_-1.33%,rgba(137,110,1,0.13)_48.95%,#171300_108.86%)]">
                     <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-3 mb-16">
-                        <div className="my-auto sm:px-16 md:px-24 lg:px-0 lg:py-12">
+                        <div data-aos="fade-right" className="my-auto sm:px-16 md:px-24 lg:px-0 lg:py-12">
                             <div className="shadow-lg text-white p-5 bg-black dark:bg-gray-800 rounded-lg divide-y relative top-24 lg:top-0 lg:left-32">
                                 <div className="py-2 cursor-pointer hover:text-gray-300">
                                     <div className="">E-mail</div>
@@ -53,7 +58,7 @@ function contactus() {
                                 </div>
                             </div>
                         </div>
-                        <div className="md:col-span-2 flex items-center bg-gray-100 dark:bg-gray-600 rounded-3xl px-5 pb-5 pt-28 lg:pl-36 lg:py-5 lg:pr-5">
+                        <div data-aos="fade-left" className="md:col-span-2 flex items-center bg-gray-100 dark:bg-gray-600 rounded-3xl px-5 pb-5 pt-28 lg:pl-36 lg:py-5 lg:pr-5">
                             <div className="space-y-7 w-full">
                                 <div className="">
                                     <div className="text-center md:text-4xl font-bold text-yellow-600 text-xl">Leave a Quick Message</div>
