@@ -124,7 +124,7 @@ function BecomeRider() {
                             <div className="text-shap-800">Requirements to <span className="text-white">Become a </span></div>
                             <div className="text-white">Driver</div>
                         </div>
-                        <div className="text-gray-200 max-w-lg">To become a Shap Cab driver, you'll need to meet the following requirements</div>
+                        <div className="text-gray-200 max-w-lg">To become a Shap Cab driver, you&apos;ll need to meet the following requirements</div>
                         <div className="space-y-3">
                             {
                                 requirements.map((txt, i) => (
