@@ -1,84 +1,57 @@
 import BlogBanner from '@/components/BlogBanner'
 import Layout from '@/components/Layout'
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import img from '../../../public/images/Rectanglei7.png'
 import Image from 'next/image'
 import BlogCard from '@/components/BlogCard'
-import Link from 'next/link'
+import axios from 'axios'
+import { AiOutlineFileSearch } from 'react-icons/ai'
 
 function Index() {
-    const [recentBlog,setRecentBlog] = useState([
-        {
-            id: 1 ,
-            image:'/images/Imageframe.png',
-            title: 'How to choose perfect gadgets',
-            body: 'When, while the lovely valley teems with vapour around me, and the meridian sun strikes the upper s ...',
-            createdAt: 'January 4, 2023',
-            author: 'Milez'
-        },
-        {
-            id: 1 ,
-            image:'/images/Imageframe(1).png',
-            title: 'How to choose perfect gadgets',
-            body: 'When, while the lovely valley teems with vapour around me, and the meridian sun strikes the upper s ...',
-            createdAt: 'January 4, 2023',
-            author: 'Milez'
-        },
-        {
-            id: 1 ,
-            image:'/images/Imageframe(2).png',
-            title: 'How to choose perfect gadgets',
-            body: 'When, while the lovely valley teems with vapour around me, and the meridian sun strikes the upper s ...',
-            createdAt: 'January 4, 2023',
-            author: 'Milez'
-        },
-        {
-            id: 1 ,
-            image:'/images/Imageframe.png',
-            title: 'How to choose perfect gadgets',
-            body: 'When, while the lovely valley teems with vapour around me, and the meridian sun strikes the upper s ...',
-            createdAt: 'January 4, 2023',
-            author: 'Milez'
-        },
-        {
-            id: 1 ,
-            image:'/images/Imageframe(1).png',
-            title: 'How to choose perfect gadgets',
-            body: 'When, while the lovely valley teems with vapour around me, and the meridian sun strikes the upper s ...',
-            createdAt: 'January 4, 2023',
-            author: 'Milez'
-        },
-        {
-            id: 1 ,
-            image:'/images/Imageframe(2).png',
-            title: 'How to choose perfect gadgets',
-            body: 'When, while the lovely valley teems with vapour around me, and the meridian sun strikes the upper s ...',
-            createdAt: 'January 4, 2023',
-            author: 'Milez'
-        }
-    ])
+    const [recentBlog,setRecentBlog] = useState([])
+    const base = 'https://api.hmxexpress.com/api';
+    const [firstBlog,setFirstBlog] = useState({})
+
+    const fetchFaq = () => {
+        axios.post(`${base}/blog/frontend-fetch-posts`).then((res) => {
+            setRecentBlog(res.data.data.posts);
+            setFirstBlog(res.data.data.posts[0]);
+        })
+    }
+
+    useEffect(() =>{
+        fetchFaq();
+    },[])
+
     return (
         <Layout active={'Blog'}>
             <BlogBanner />
             <div className="grid md:grid-cols-2 gap-5 items-center py-24 max-w-7xl mx-auto p-3 ">
                 <div className="md:order-1 space-y-6">
-                    <div className="text-shap-800">Rider</div>
-                    <div className="dark:text-white font-[1000] text-3xl lg:text-5xl">CRM Insights: Selection the Right One for Your Organization</div>
-                    <div className="text-gray-400">Your safety is our utmost priority. We go to great lengths to ensure that every ride you take with Shap Ride is secure and comfortable. Our drivers undergo rigorous background checks, and our vehicles are meticulously maintained to guarantee your peace of mind throughout your journey.</div>
-                    <div className="text-shap-800">05 June, 2023 - by Noble Okechi</div>
+                    <div className="text-shap-800">{firstBlog.category}</div>
+                    <div className="dark:text-white font-[1000] text-3xl lg:text-5xl">{firstBlog.title}</div>
+                    <div className="text-gray-400">{firstBlog.body}</div>
+                    <div className="text-shap-800">05 June, 2023 - by {firstBlog.author_name}</div>
                 </div>
                 <div className="">
                     <Image src={img} alt='#' className='w-full h-full' />
                 </div>
             </div>
-            <div className="max-w-7xl py-4 mx-auto grid px-3 sm:grid-cols-2 md:grid-cols-3 gap-y-12 gap-7">
+            <div className="max-w-7xl mx-auto">
+                <div className="max-w-sm bg-white dark:text-white dark:border-gray-600 dark:bg-gray-800 rounded-lg overflow-hidden border relative">
+                    <div className="absolute top-3 left-2">
+                        <AiOutlineFileSearch size={'24px'} />
+                    </div>
+                    <input type="text" className="w-full pl-9 bg-transparent h-full focus:outline-none p-3" placeholder="Search by Blog Title" />
+                </div>
+            </div>
+            <div className="max-w-7xl py-4 mx-auto grid px-3 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-y-12 gap-7">
                 {
                     recentBlog.map((blog,index)=>(
-                        <BlogCard data={blog} key={index} />
+                        <div className="" key={index}><BlogCard data={blog} /></div>
                     ))
                 }
             </div>
-            <div className="max-w-[120px] mx-auto bg-yellow-500 hover:bg-yellow-400 text-white"><Link href="/blogs" className=""> <div className="w-full text-center py-2"> View More</div> </Link></div>
         </Layout>
     )
 }
