@@ -10,7 +10,7 @@ import img4 from '../../public/images/Rectangle16.png'
 import img5 from '../../public/images/Rectangle18.png'
 import img6 from '../../public/images/Rectangle16(1).png'
 
-function about() {
+function About() {
   useEffect(() =>{
       AOS.init();
   },[])
@@ -172,4 +172,4 @@ function about() {
   )
 }
 
-export default about
+export default About

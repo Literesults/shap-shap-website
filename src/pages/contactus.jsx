@@ -12,7 +12,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 
-function contactus() {
+function Contactus() {
     useEffect(() =>{
         AOS.init();
     },[])
@@ -83,4 +83,4 @@ function contactus() {
     )
 }
 
-export default contactus
+export default Contactus
