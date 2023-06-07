@@ -7,12 +7,17 @@ import img2 from '../../public/images/Rectangl7.png'
 import img3 from '../../public/images/Rectanglei8.png'
 import img4 from '../../public/images/Rectanglei9.png'
 import img5 from '../../public/images/Rect19.png'
-import React from 'react'
+import React, { useEffect } from 'react'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import Steps from '@/components/Steps'
 import { TfiCar } from 'react-icons/tfi'
 import Journey from '@/components/Journey'
 
 function BecomeRider() {
+    useEffect(() =>{
+        AOS.init();
+    },[])
     const process = [
         {
             step: "Flexibility",
@@ -65,7 +70,7 @@ function BecomeRider() {
             <div className="abtBg">
                 <div className="h-[60vh] flex w-full items-center [background:linear-gradient(90.03deg,#0E0B00_-1.33%,rgba(137,110,1,0.13)_48.95%,#171300_108.86%)]">
                     <div className="w-full">
-                        <div className="max-w-7xl px-2 space-y-4 text-white mx-auto py-5">
+                        <div data-aos="fade-up" className="max-w-7xl px-2 space-y-4 text-white mx-auto py-5">
                             <div className="[letter-spacing:0.175em]">Become a Shap Cab Ride Driver</div>
                             <div className="font-[1000] space-y-2 text-3xl md:text-5xl">
                                 <div className="">Join Our Driver </div>
@@ -87,25 +92,25 @@ function BecomeRider() {
                     <div className="">
                         {
                             process.map((pros, i) => (
-                                <Steps key={i} data={pros} />
+                                <div key={i} data-aos="fade-up"><Steps data={pros} /></div>
                             ))
                         }
                     </div>
                 </div>
                 <div className="grid min-h-[400px] grid-cols-2 gap-8">
                     <div className="h-full flex gap-8 flex-col">
-                        <div className="h-1/3 rounded-xl">
+                        <div data-aos="fade-down" className="h-1/3 rounded-xl">
                             <Image src={img1} alt="" srcSet="" className="w-full h-full" draggable="false" />
                         </div>
-                        <div className="flex-grow rounded-xl">
+                        <div data-aos="fade-right" className="flex-grow rounded-xl">
                             <Image src={img2} alt="" srcSet="" className="w-full h-full" draggable="false" />
                         </div>
                     </div>
                     <div className="h-full flex gap-8 flex-col">
-                        <div className="flex-grow rounded-xl">
+                        <div data-aos="fade-left" className="flex-grow rounded-xl">
                             <Image src={img3} alt="" srcSet="" className="w-full h-full" draggable="false" />
                         </div>
-                        <div className="h-1/3 rounded-xl">
+                        <div data-aos="fade-up" className="h-1/3 rounded-xl">
                             <Image src={img4} alt="" srcSet="" className="w-full h-full" draggable="false" />
                         </div>
                     </div>
@@ -124,7 +129,7 @@ function BecomeRider() {
                         <div className="space-y-3">
                             {
                                 requirements.map((txt, i) => (
-                                    <div key={i} className="flex gap-3">
+                                    <div data-aos="fade-up" key={i} className="flex gap-3">
                                         <TfiCar size={'20px'} className="text-yellow-400 relative bottom-0" />
                                         <div className="text-white max-w-md">{txt}</div>
                                     </div>
@@ -133,7 +138,7 @@ function BecomeRider() {
 
                         </div>
                     </div>
-                    <div className="">
+                    <div data-aos="zoom-in" className="">
                         <Image src={img4} alt="" srcSet="" className="w-full h-full" draggable="false" />
                     </div>
                 </div>
@@ -150,7 +155,7 @@ function BecomeRider() {
                         <div className="">
                             {
                                 process2.map((pros, i) => (
-                                    <Steps key={i} data={pros} />
+                                    <div key={i} data-aos="fade-up"><Steps data={pros} /></div>
                                 ))
                             }
                         </div>
@@ -160,7 +165,7 @@ function BecomeRider() {
                         </div>
                     </div>
                 </div>
-                <div className="grid min-h-[400px]">
+                <div data-aos="zoom-in" className="grid min-h-[400px]">
                     <Image src={img5} alt="" srcSet="" className="w-full h-full" draggable="false" />
                 </div>
             </div>

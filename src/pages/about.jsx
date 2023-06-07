@@ -147,8 +147,6 @@ function About() {
         </div>
       </div>
 
-
-
       <div className="[background:linear-gradient(257.74deg,#E09800_0%,#322200_98.56%)] py-28">
         <div className="grid p-3 sm:grid-cols-2 gap-8 items-center mx-auto max-w-5xl">
           <div data-aos="fade-right" className="space-y-5">
