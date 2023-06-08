@@ -40,7 +40,7 @@ function Footer() {
                 <div className="lg:flex space-y-4 items-center gap-4">
                     <div className="flex-grow space-y-4">
                         <div className="text-3xl pb-3 text-white">
-                            <Image src={logoLight} alt='' width={'80'} height={'104'} className="rounded-lg mx-auto sm:mx-0 dark:block cursor-pointer" draggable="false" />
+                            <Image src={logoLight} alt='' width={'100'} height={'104'} className="rounded-lg mx-auto sm:mx-0 dark:block cursor-pointer" draggable="false" />
                         </div>
                         <div className="space-y-3">
                             <div className="flex justify-center sm:justify-start flex-wrap gap-2">
