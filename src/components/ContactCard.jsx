@@ -17,7 +17,7 @@ function ContactCard() {
                     <div className="uppercase text-4xl font-bold">get in touch now</div>
                     <div className="space-y-6">
                         <div>
-                        Connect, Communicate, and Create: Reach out to us for all your transportation needs. We're here to assist you in every step of your journey, providing exceptional service and personalized support. Get in touch with us today and experience the convenience and reliability of Shap Cab!
+                        Connect, Communicate, and Create: Reach out to us for all your transportation needs. We&apos;re here to assist you in every step of your journey, providing exceptional service and personalized support. Get in touch with us today and experience the convenience and reliability of Shap Cab!
                         </div>
                         <div className="">
                             <Link href={'/contactus'} className="uppercase py-3 px-5 text-white cursor-pointer bg-yellow-400 rounded-md">More Contact </Link>
