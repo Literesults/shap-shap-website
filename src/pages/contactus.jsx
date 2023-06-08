@@ -13,16 +13,16 @@ import 'aos/dist/aos.css';
 
 
 function Contactus() {
-    useEffect(() =>{
+    useEffect(() => {
         AOS.init();
-    },[])
+    }, [])
     const sendFeedBack = (e) => {
         e.preventDefault()
         const data = serialize(e.target)
         const base = 'https://api.hmxexpress.com/api';
         const form = document.getElementById('feedBackForm')
-        axios.post(`${base}/support/send-feedback`, data ).then((res) => {
-            notifier({ type: "success", message: res.data.message , autoDismissTimeout:5000 });
+        axios.post(`${base}/support/send-feedback`, data).then((res) => {
+            notifier({ type: "success", message: res.data.message, autoDismissTimeout: 5000 });
             form.reset()
         }).catch((error) => {
             console.log(error.response);
@@ -61,9 +61,9 @@ function Contactus() {
                         <div data-aos="fade-left" className="md:col-span-2 flex items-center bg-gray-100 dark:bg-gray-600 rounded-3xl px-5 pb-5 pt-28 lg:pl-36 lg:py-5 lg:pr-5">
                             <div className="space-y-7 w-full">
                                 <div className="">
-                                    <div className="text-center md:text-4xl font-bold text-yellow-600 text-xl">Leave a Quick Message</div>
+                                    <div className="text-center md:text-4xl font-bold text-yellow-600 text-xl">Let&apos;s Stay Connected</div>
                                     <div className="mx-auto max-w-lg text-center text-gray-400 text-sm">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem et amet enim ipsa adipisci, consequuntur sunt deleniti nesciunt quibusdam temporibus laborum ipsam rerum earum ea quia facilis nobis vitae soluta!
+                                        We value your feedback and insights. Whether you have a suggestion, a compliment, or even a concern, we&apos;re here to listen. Your feedback helps us improve our services and ensure that every ride with Shap Cab exceeds your expectations.
                                     </div>
                                 </div>
                                 <form onSubmit={sendFeedBack} id="feedBackForm" className="px-3 md:px-16 py-8 space-y-3">

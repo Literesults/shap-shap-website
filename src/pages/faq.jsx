@@ -50,9 +50,9 @@ function Faq() {
       <section className="">
         <div className="abtBg">
           <div className="[background:linear-gradient(90.06deg,#050400_-1.71%,rgba(87,70,0,0.25)_56.42%,rgba(151,120,0,0.83)_113.82%)] space-y-6 py-20">
-            <div className="text-center text-4xl font-bold text-white capitalize"  >frequently asked questions</div>
+            <div className="text-center text-4xl font-bold text-white capitalize"  >Got Questions? We&apos;ve Got Answers!</div>
             <div className="max-w-2xl mx-auto text-gray-200 text-center">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi tempore possimus reiciendis doloribus impedit rem distinctio quam pariatur officiis facilis omnis reprehenderit, dignissimos laborum veritatis ipsam! Explicabo quia quam voluptates?
+            Welcome to our FAQ page, your go-to resource for answers to common queries and concerns. We understand that navigating a new service can bring up uncertainties, so we&apos;ve compiled a comprehensive list of frequently asked questions to provide you with the information you need. From booking procedures to payment options, find clarity and peace of mind in our detailed responses.
             </div>
           </div>
         </div>

@@ -17,7 +17,7 @@ function ContactCard() {
                     <div className="uppercase text-4xl font-bold">get in touch now</div>
                     <div className="space-y-6">
                         <div>
-                            A town hall different from bala blu, blue blu bulaba. broom broom broom brooooooooom. Bala blu blue blu bulaba. <br /> Always ready to speak with you +234 813 0075 358
+                        Connect, Communicate, and Create: Reach out to us for all your transportation needs. We're here to assist you in every step of your journey, providing exceptional service and personalized support. Get in touch with us today and experience the convenience and reliability of Shap Cab!
                         </div>
                         <div className="">
                             <Link href={'/contactus'} className="uppercase py-3 px-5 text-white cursor-pointer bg-yellow-400 rounded-md">More Contact </Link>
