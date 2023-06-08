@@ -20,7 +20,7 @@ function SubBanner() {
             <div>
                 <div className="pt-24 bg-gray-50 dark:bg-gray-900 px-3">
                     <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-5">
-                        <div data-aos="zoom-in" className="flex w-full gap-5 flex-col justify-center">
+                        <div data-aos="fade-right" className="flex w-full gap-5 flex-col justify-center">
                             <div className="cursor-default">
                                 <div className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-gray-700 dark:text-gray-50 capitalize">Welcome  to<span className="text-yellow-600"> Shap</span></div>
                                 <div className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-yellow-600 capitalize"> Cab</div>

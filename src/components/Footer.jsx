@@ -27,11 +27,11 @@ function Footer() {
                 <Image draggable={false} src={CityImg} alt="" className="footerCityImg" width="400" height="200" />
             </div>
             <div className="p-12 pb-4 px-3 md:px-12 space-y-6 bg-shap-900">
-                <div className="lg:flex space-y-4 items-center gap-4">
+                <div className="lg:flex space-y-4 content-center items-center gap-4">
                     <div className="flex-grow">
-                        <div className="max-w-sm text-white font-bold text-3xl">Join our newsletter to keep up to date with us</div>
+                        <div className="max-w-sm text-center sm:text-left text-white font-bold text-3xl">Join our newsletter to keep up to date with us</div>
                     </div>
-                    <div className="flex w-80 rounded-lg overflow-hidden">
+                    <div className="flex w-80 mx-auto sm:mx-0 rounded-lg overflow-hidden">
                         <button className="bg-black order-1 text-white px-4 py-2">Subscribe</button>
                         <div className="flex-grow"><input type="text" className="w-full border-0 focus:outline-none focus:ring-0 px-4 h-full ring-0" /></div>
                     </div>
@@ -40,14 +40,14 @@ function Footer() {
                 <div className="lg:flex space-y-4 items-center gap-4">
                     <div className="flex-grow space-y-4">
                         <div className="text-3xl pb-3 text-white">
-                            <Image src={logoLight} alt='' width={'80'} height={'104'} className="rounded-lg dark:block cursor-pointer" draggable="false" />
+                            <Image src={logoLight} alt='' width={'80'} height={'104'} className="rounded-lg mx-auto sm:mx-0 dark:block cursor-pointer" draggable="false" />
                         </div>
                         <div className="space-y-3">
-                            <div className="flex flex-wrap gap-2">
+                            <div className="flex justify-center sm:justify-start flex-wrap gap-2">
                                 <Image src={google} alt='' width={'140'} height={'54'} className="rounded-lg cursor-pointer" draggable="false" />
                                 <Image src={apple} alt='' width={'140'} height={'54'} className="rounded-lg cursor-pointer" draggable="false" />
                             </div>
-                            <div className="flex gap-4">
+                            <div className="flex justify-center sm:justify-start gap-4">
                                 <div className="h-8 w-8 flex items-center justify-center rounded-md bg-white text-blue-600"><GrFacebookOption /></div>
                                 <div className="h-8 w-8 flex items-center justify-center rounded-md bg-white text-blue-500"><GrTwitter /></div>
                                 <div className="h-8 w-8 flex items-center justify-center rounded-md bg-white">
@@ -75,17 +75,21 @@ function Footer() {
                             </div>
                         </div>
                     </div>
-                    <div className="w-60 h-36 bg-gray-600 rounded-md p-5">
-                        <div className="">
-
-                        </div>
-                        <div className=""></div>
+                    <div className="md:w-[450px] dark:hidden rounded-md">
+                        <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Why would your Startup idea leverage on investors alone?
+                                <br /><br />
+                                Have you ever thought of getting a better product that can scale through on its own?
+                            </p>&mdash; Noble Okechi (@noble_okechi)<a href="https://twitter.com/noble_okechi/status/1664492277660565505?ref_src=twsrc%5Etfw">June 2, 2023</a>
+                        </blockquote><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                    </div>
+                    <div className="md:w-[450px] hidden dark:block rounded-md">
+                    <blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">Why would your Startup idea leverage on investors alone?<br /><br />Have you ever thought of getting a better product that can scale through on its own?</p>&mdash; Noble Okechi (@noble_okechi) <a href="https://twitter.com/noble_okechi/status/1664492277660565505?ref_src=twsrc%5Etfw">June 2, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
                     </div>
                 </div>
                 <hr className="w-[98%] border-gray-600 mx-auto h-[2px]" />
-                <div className="sm:flex gap-4 space-y-3 text-sm">
+                <div className="flex items-center gap-4 space-y-3 text-sm">
                     <div className="flex-grow text-white font-semibold">Copyright &copy; 2023 - <span className="text-gray-400">Shap Cab </span></div>
-                    <div className="w-72 flex items-center gap-4 text-gray-300">
+                    <div className="flex relative bottom-2 items-center gap-4 text-gray-300">
                         {/* <div className="w-1 h-1 relative top-1 bg-slate-200 rounded-full"></div> */}
                         <Link href={'/terms-conditions'} className="cursor-pointer hover:text-white">Teams & Conditions</Link>
                     </div>
