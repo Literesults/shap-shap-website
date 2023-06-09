@@ -35,7 +35,7 @@ function Blog() {
                     </div>
                 </div>
                 <div className="space-y-6 max-w-5xl mx-auto">
-                    <div className="text-sm text-shap-800"> {blog.created_at.split("T")[0]} - by {blog.author_name}</div>
+                    <div className="text-sm text-shap-800"> {blog.created_at?.split("T")[0]} - by {blog.author_name}</div>
                     <div className="dark:text-white">{blog.body}</div>
                     <div className="flex">
                         <div className="text-shap-800 flex-grow"></div>
