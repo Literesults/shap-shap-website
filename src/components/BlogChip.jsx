@@ -8,6 +8,7 @@ function BlogChip() {
     const base = 'https://api.hmxexpress.com/api';
     const fetchFaq = () => {
         axios.post(`${base}/blog/frontend-fetch-posts`).then((res) => {
+            console.log(res);
             setRecentBlog(res.data.data.posts.slice(0, 3));
         })
     }

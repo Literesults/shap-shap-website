@@ -76,14 +76,16 @@ function Footer() {
                         </div>
                     </div>
                     <div className="md:w-[450px] dark:hidden rounded-md">
-                        <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Why would your Startup idea leverage on investors alone?
+                        <blockquote className="twitter-tweet"><p lang="en" dir="ltr">Why would your Startup idea leverage on investors alone?
                                 <br /><br />
                                 Have you ever thought of getting a better product that can scale through on its own?
-                            </p>&mdash; Noble Okechi (@noble_okechi)<a href="https://twitter.com/noble_okechi/status/1664492277660565505?ref_src=twsrc%5Etfw">June 2, 2023</a>
-                        </blockquote><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                            </p>&mdash; Noble Okechi (@noble_okechi)
+                            <a href="https://twitter.com/noble_okechi/status/1664492277660565505?ref_src=twsrc%5Etfw">June 2, 2023</a>
+                        </blockquote>
+                        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
                     </div>
                     <div className="md:w-[450px] hidden dark:block rounded-md">
-                    <blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">Why would your Startup idea leverage on investors alone?<br /><br />Have you ever thought of getting a better product that can scale through on its own?</p>&mdash; Noble Okechi (@noble_okechi) <a href="https://twitter.com/noble_okechi/status/1664492277660565505?ref_src=twsrc%5Etfw">June 2, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                        <blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">Why would your Startup idea leverage on investors alone?<br /><br />Have you ever thought of getting a better product that can scale through on its own?</p>&mdash; Noble Okechi (@noble_okechi) <a href="https://twitter.com/noble_okechi/status/1664492277660565505?ref_src=twsrc%5Etfw">June 2, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
                     </div>
                 </div>
                 <hr className="w-[98%] border-gray-600 mx-auto h-[2px]" />
