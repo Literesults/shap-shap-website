@@ -29,7 +29,7 @@ function Footer() {
             <div className="p-12 pb-4 px-3 md:px-12 space-y-6 bg-shap-900">
                 <div className="lg:flex space-y-4 content-center items-center gap-4">
                     <div className="flex-grow">
-                        <div className="max-w-sm text-center sm:text-left text-white font-bold text-3xl">Join our newsletter to keep up to date with us</div>
+                        <div className="sm:max-w-sm text-center sm:text-left text-white font-bold text-3xl">Join our newsletter to keep up to date with us</div>
                     </div>
                     <div className="flex w-80 mx-auto sm:mx-0 rounded-lg overflow-hidden">
                         <button className="bg-black order-1 text-white px-4 py-2">Subscribe</button>
