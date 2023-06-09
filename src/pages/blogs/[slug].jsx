@@ -10,7 +10,7 @@ function Blog() {
     const router = useRouter()
     const { slug } = router.query
     const base = 'https://api.hmxexpress.com/api';
-    const [blog,setBlog] = useState({})
+    const [blog, setBlog] = useState({})
     useEffect(() => {
         axios.post(`${base}/blog/frontend-fetch-a-post`, { slug }).then((res) => {
             setBlog(res.data.data.post);
@@ -24,14 +24,18 @@ function Blog() {
                 <div className="w-full">
                     <div className="max-w-7xl mx-auto space-y-4">
                         <div className="[letter-spacing:0.175em] text-shap-800">{blog.category}</div>
-                        <div className="max-w-5xl font-[1000] text-3xl md:text-5xl dark:text-white">{blog.title}</div>
+                        <div className="max-w-5xl font-[1000] text-3xl md:text-5xl text-white">{blog.title}</div>
                     </div>
                 </div>
             </div>
             <div className="max-w-7xl py-10 md:py-24 space-y-6 p-3 mx-auto">
-                <div className="rounded-xl overflow-hidden"><div className={`max-w-7xl mx-auto h-[500px] bg-[url('/images/Rectanglei7.png')] bg-no-repeat bg-cover bg-center`} /></div>
+                <div className="rounded-xl overflow-hidden">
+                    <div className={`max-w-7xl mx-auto h-[500px]`}>
+                        <Image src={blog.image} alt={blog.title} width={'100'} height={'100'} draggable={false} className='w-full h-full' />
+                    </div>
+                </div>
                 <div className="space-y-6 max-w-5xl mx-auto">
-                    <div className="text-sm text-shap-800">05 June, 2023 - by {blog.author_name}</div>
+                    <div className="text-sm text-shap-800"> {blog.created_at.split("T")[0]} - by {blog.author_name}</div>
                     <div className="dark:text-white">{blog.body}</div>
                     <div className="flex">
                         <div className="text-shap-800 flex-grow"></div>

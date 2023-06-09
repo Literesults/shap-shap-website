@@ -9,7 +9,6 @@ function BlogCard({ data }) {
         AOS.init();
     },[])
     const time = data.created_at.split("T")[0]
-    console.log(data.image);
     return (
         <Link data-aos="fade-up" href={`/blogs/${data.slug}`} className="space-y-3 mb-3">
             <div className="h-60 bg-gray-400 rounded-md">

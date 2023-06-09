@@ -10,9 +10,9 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 function Index() {
-    const [recentBlog,setRecentBlog] = useState([])
+    const [recentBlog, setRecentBlog] = useState([])
     const base = 'https://api.hmxexpress.com/api';
-    const [firstBlog,setFirstBlog] = useState({})
+    const [firstBlog, setFirstBlog] = useState({})
 
     const fetchFaq = () => {
         axios.post(`${base}/blog/frontend-fetch-posts`).then((res) => {
@@ -21,10 +21,10 @@ function Index() {
         })
     }
 
-    useEffect(() =>{
+    useEffect(() => {
         fetchFaq();
         AOS.init();
-    },[])
+    }, [])
 
     return (
         <Layout active={'Blog'}>
@@ -37,20 +37,25 @@ function Index() {
                     <div className="text-shap-800">05 June, 2023 - by {firstBlog.author_name}</div>
                 </div>
                 <div data-aos="fade-right" className="">
-                    <Image src={img} alt='#' className='w-full h-full' />
+                    <Image src={firstBlog.image} alt={firstBlog.title} width={'100'} height={'100'} className='w-full h-full' />
                 </div>
             </div>
-            <div className="max-w-6xl p-3 mx-auto">
-                <div className="max-w-md bg-white dark:text-white dark:border-gray-600 dark:bg-gray-800 rounded-lg overflow-hidden border relative">
-                    <div className="absolute top-3 left-2">
-                        <AiOutlineFileSearch size={'24px'} />
+            {
+                recentBlog.slice(1).length > 21 && (
+                    <div className="max-w-6xl p-3 mx-auto">
+                        <div className="max-w-md bg-white dark:text-white dark:border-gray-600 dark:bg-gray-800 rounded-lg overflow-hidden border relative">
+                            <div className="absolute top-3 left-2">
+                                <AiOutlineFileSearch size={'24px'} />
+                            </div>
+                            <input type="text" className="w-full pl-9 bg-transparent h-full focus:outline-none p-3" placeholder="Search by Blog Title" />
+                        </div>
                     </div>
-                    <input type="text" className="w-full pl-9 bg-transparent h-full focus:outline-none p-3" placeholder="Search by Blog Title" />
-                </div>
-            </div>
+                )
+            }
+
             <div className="max-w-6xl py-4 mx-auto grid px-3 sm:grid-cols-2 md:grid-cols-3 gap-y-12 gap-7">
                 {
-                    recentBlog.map((blog,index)=>(
+                    recentBlog.slice(1).map((blog, index) => (
                         <div className="" key={index}><BlogCard data={blog} /></div>
                     ))
                 }

@@ -47,7 +47,7 @@ function Footer() {
                                 <Image src={google} alt='' width={'140'} height={'54'} className="rounded-lg cursor-pointer" draggable="false" />
                                 <Image src={apple} alt='' width={'140'} height={'54'} className="rounded-lg cursor-pointer" draggable="false" />
                             </div>
-                            <div className="flex justify-center sm:justify-start gap-4">
+                            <div className="flex relative top-4 justify-center sm:justify-start gap-4">
                                 <div className="h-8 w-8 flex items-center justify-center rounded-md bg-white text-blue-600"><GrFacebookOption /></div>
                                 <div className="h-8 w-8 flex items-center justify-center rounded-md bg-white text-blue-500"><GrTwitter /></div>
                                 <div className="h-8 w-8 flex items-center justify-center rounded-md bg-white">

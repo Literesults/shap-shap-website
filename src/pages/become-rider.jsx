@@ -71,13 +71,13 @@ function BecomeRider() {
                 <div className="h-[60vh] flex w-full items-center [background:linear-gradient(90.03deg,#0E0B00_-1.33%,rgba(137,110,1,0.13)_48.95%,#171300_108.86%)]">
                     <div className="w-full">
                         <div data-aos="fade-up" className="max-w-7xl px-2 space-y-4 text-white mx-auto py-5">
-                            <div className="[letter-spacing:0.175em]">Become a Shap Cab Ride Driver</div>
+                            <div className="[letter-spacing:0.175em]">Become a Shap Cab Rider</div>
                             <div className="font-[1000] space-y-2 text-3xl md:text-5xl">
                                 <div className="">Join Our Driver </div>
                                 <div className="">Community</div>
                             </div>
                             <div className="max-w-md text-sm">
-                                At Sharp Ride, we value the drivers who power our platform. Join our driver community and become part of a dedicated network that connects passengers to their destinations.
+                                At Shap Cab, we value the drivers who power our platform. Join our driver community and become part of a dedicated network that connects passengers to their destinations.
                             </div>
                         </div>
                     </div>
