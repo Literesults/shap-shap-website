@@ -133,7 +133,7 @@ function Agreement() {
                                                 agreement.subChlide.map((data, index) => (
                                                     <div className="flex pl-2" key={data[index]}>
                                                         <div className="">{data.alphabet}</div>
-                                                        <div className="">. {data.text}</div>
+                                                        <div className="pl-2 first-line:pl-0">. {data.text}</div>
                                                     </div>
                                                 ))
                                             }
