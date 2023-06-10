@@ -13,6 +13,7 @@ function Index() {
     const [recentBlog, setRecentBlog] = useState([])
     const base = 'https://api.hmxexpress.com/api';
     const [firstBlog, setFirstBlog] = useState({})
+    const time = firstBlog.created_at?.split("T")[0]
 
     const fetchFaq = () => {
         axios.post(`${base}/blog/frontend-fetch-posts`).then((res) => {
@@ -34,14 +35,14 @@ function Index() {
                     <div className="text-shap-800">{firstBlog.category}</div>
                     <div className="dark:text-white font-[1000] text-3xl lg:text-5xl">{firstBlog.title}</div>
                     <div className="text-gray-400">{firstBlog.body}</div>
-                    <div className="text-shap-800">05 June, 2023 - by {firstBlog.author_name}</div>
+                    <div className="text-shap-800">{time} - by {firstBlog.author_name}</div>
                 </div>
                 <div data-aos="fade-right" className="">
                     <Image src={firstBlog.image} alt={firstBlog.title} width={'100'} height={'100'} className='w-full h-full' />
                 </div>
             </div>
             {
-                recentBlog.slice(1).length > 21 && (
+                recentBlog.slice(1).length > 18 && (
                     <div className="max-w-6xl p-3 mx-auto">
                         <div className="max-w-md bg-white dark:text-white dark:border-gray-600 dark:bg-gray-800 rounded-lg overflow-hidden border relative">
                             <div className="absolute top-3 left-2">

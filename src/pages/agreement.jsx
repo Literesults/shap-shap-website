@@ -2,7 +2,7 @@ import Layout from '@/components/Layout'
 import React from 'react'
 import banerIMg from '../../public/images/driver-job-description.jpg'
 
-function termsconditions() {
+function agreement() {
   return (
     <Layout active={'terms-conditions'}>
       <div className="bgImg">
@@ -10,7 +10,7 @@ function termsconditions() {
           <div className="max-w-7xl mx-auto py-12">
             <div className="text-center">
               <div className=""> 
-                <div className="text-xl sm:text-6xl font-extrabold text-gray-700 dark:text-gray-50 capitalize"><span className="underline">Terms</span> <span className="text-xl md:text-3xl dark:text-gray-200">&</span><span className="text-xl sm:text-6xl font-extrabold text-yellow-600 capitalize"> Conditions</span></div>
+                <div className="text-xl sm:text-6xl font-extrabold text-gray-700 dark:text-gray-50 capitalize"><span className="">Agreement</span></div>
                 <div className="max-w-lg mx-auto mt-5 text-sm text-black dark:text-gray-200">
                   Lorem, ipsum dolor sit amet consectetur  nesciunt voluptatum eligendi magnam corrupti earum iusto nam illo inventore, dignissimos, sapiente atque officia aliquid ipsam!
                 </div>
@@ -21,7 +21,7 @@ function termsconditions() {
       </div>
       <div className="max-w-7xl dark:text-gray-300 px-3 mx-auto py-12">
         <div className="space-y-3">
-          <div className="text-lg font-bold dark:text-white">Terms & Conditions</div>
+          <div className="text-lg font-bold dark:text-white">Drivers Agreement</div>
           <div className="space-y-5 text-sm md:text-base">
             <p>
               A town hall different from bala blu, blue blu bulaba. broom broom broom brooooooooom. Bala blu blue blu bulaba. The farmers will make more money. Your lunch will not be imported, cassava garri ewa and ehhh ehhhhnn. The farmer will make money, the dinner would be cassava, eba, ewa and everything.
@@ -37,8 +37,8 @@ function termsconditions() {
             </p>
           </div>
         </div>
-        <div id="policy" className="space-y-3 pt-12">
-          <div className="text-lg font-bold dark:text-white">Policy</div>
+        <div id="users-agreement" className="space-y-3 pt-12">
+          <div className="text-lg font-bold dark:text-white">Users Agreement</div>
           <div className="space-y-5 text-sm md:text-base">
             <p>
               A town hall different from bala blu, blue blu bulaba. broom broom broom brooooooooom. Bala blu blue blu bulaba. The farmers will make more money. Your lunch will not be imported, cassava garri ewa and ehhh ehhhhnn. The farmer will make money, the dinner would be cassava, eba, ewa and everything.
@@ -58,4 +58,4 @@ function termsconditions() {
   )
 }
 
-export default termsconditions
+export default agreement

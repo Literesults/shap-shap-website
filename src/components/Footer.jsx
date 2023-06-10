@@ -69,9 +69,9 @@ function Footer() {
                         <div className="space-y-4">
                             <div className="text-white font-bold text-xl">Legal</div>
                             <div className="flex flex-col gap-2 text-gray-400">
-                                <Link href={'/blogs'} className="cursor-pointer hover:text-white">Drivers Agreement</Link>
-                                <Link href={'/about'} className="cursor-pointer hover:text-white">Users Agreement</Link>
-                                <Link href={'/faq'} className="cursor-pointer hover:text-white">Policy</Link>
+                                <Link href={'/agreement'} className="cursor-pointer hover:text-white">Drivers Agreement</Link>
+                                <Link href={'/agreement#users-agreement'} className="cursor-pointer hover:text-white">Users Agreement</Link>
+                                <Link href={'/terms-conditions#policy'} className="cursor-pointer hover:text-white">Policy</Link>
                             </div>
                         </div>
                     </div>
@@ -93,7 +93,7 @@ function Footer() {
                     <div className="flex-grow text-white font-semibold">Copyright &copy; 2023 - <span className="text-gray-400">Shap Cab </span></div>
                     <div className="flex relative bottom-2 items-center gap-4 text-gray-300">
                         {/* <div className="w-1 h-1 relative top-1 bg-slate-200 rounded-full"></div> */}
-                        <Link href={'/terms-conditions'} className="cursor-pointer hover:text-white">Teams & Conditions</Link>
+                        <Link href={'/terms-conditions'} className="cursor-pointer hover:text-white">Terms & Conditions</Link>
                     </div>
                 </div>
             </div>
