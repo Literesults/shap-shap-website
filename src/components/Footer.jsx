@@ -69,8 +69,8 @@ function Footer() {
                         <div className="space-y-4">
                             <div className="text-white font-bold text-xl">Legal</div>
                             <div className="flex flex-col gap-2 text-gray-400">
-                                <Link href={'/agreement'} className="cursor-pointer hover:text-white">Drivers Agreement</Link>
-                                <Link href={'/agreement#users-agreement'} className="cursor-pointer hover:text-white">Users Agreement</Link>
+                                <Link href={'/drivers-agreement'} className="cursor-pointer hover:text-white">Drivers Agreement</Link>
+                                <Link href={'/users-agreement'} className="cursor-pointer hover:text-white">Users Agreement</Link>
                                 <Link href={'/terms-conditions#policy'} className="cursor-pointer hover:text-white">Policy</Link>
                             </div>
                         </div>
