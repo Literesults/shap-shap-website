@@ -153,7 +153,7 @@ function Agreement() {
                     <div className="space-y-5 text-sm md:text-base">
                         <p>
                             User Agreement  between SHAPCAB and its users in Nigeria. <br />
-                            This Agreement sets forth the legally binding terms and conditions for your use of the Company's services.
+                            This Agreement sets forth the legally binding terms and conditions for your use of the Company&apos;s services.
                         </p>
                         {
                             userAgreement.map((agreement, index) => (
