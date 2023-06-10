@@ -1,7 +1,7 @@
 import Layout from '@/components/Layout'
 import React, { useState } from 'react'
 
-function agreement() {
+function Agreement() {
     const [userAgreement,setUserAgreement] = useState([
         {
             point: 'Services',
@@ -174,4 +174,4 @@ function agreement() {
     )
 }
 
-export default agreement
+export default Agreement
