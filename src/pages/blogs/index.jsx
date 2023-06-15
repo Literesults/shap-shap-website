@@ -30,17 +30,21 @@ function Index() {
     return (
         <Layout active={'Blog'}>
             <BlogBanner />
-            <div className="grid md:grid-cols-2 gap-5 items-center py-16 max-w-7xl mx-auto p-3 ">
-                <div data-aos="fade-left" className="md:order-1 space-y-6">
-                    <div className="text-shap-800">{firstBlog.category}</div>
-                    <div className="dark:text-white font-[1000] text-3xl lg:text-5xl">{firstBlog.title}</div>
-                    <div className="text-gray-400">{firstBlog.body}</div>
-                    <div className="text-shap-800">{time} - by {firstBlog.author_name}</div>
-                </div>
-                <div data-aos="fade-right" className="">
-                    <Image src={firstBlog.image} alt={firstBlog.title} width={'100'} height={'100'} className='w-full h-full' />
-                </div>
-            </div>
+            {
+                Object.keys(firstBlog).length > 0 && (
+                    <div className="grid md:grid-cols-2 gap-5 items-center py-16 max-w-7xl mx-auto p-3 ">
+                        <div data-aos="fade-left" className="md:order-1 space-y-6">
+                            <div className="text-shap-800">{firstBlog.category}</div>
+                            <div className="dark:text-white font-[1000] text-3xl lg:text-5xl">{firstBlog.title}</div>
+                            <div className="text-gray-400">{firstBlog.body}</div>
+                            <div className="text-shap-800">{time} - by {firstBlog.author_name}</div>
+                        </div>
+                        <div data-aos="fade-right" className="">
+                            <Image src={firstBlog.image} alt={firstBlog.title} width={'100'} height={'100'} className='w-full h-full' />
+                        </div>
+                    </div>
+                )
+            }
             {
                 recentBlog.slice(1).length > 18 && (
                     <div className="max-w-6xl p-3 mx-auto">
