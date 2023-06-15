@@ -51,8 +51,8 @@ function Navigation({ active }) {
         </div>
         <div className={`flex-grow fixed md:relative justify-center h-screen md:h-auto transition-all duration-300 w-screen bg-opacity-30 backdrop-blur-md md:backdrop-blur-0 dark:backdrop-blur-md dark:bg-opacity-30 dark:md:backdrop-blur-0 bg-gray-100 dark:bg-gray-800 dark:md:bg-transparent md:bg-transparent top-0 left-0  ${menu ? '' : 'hidden md:flex'} flex-col md:flex-row`}>
           <div className="w-full md:p-0">
-            <div className="md:flexmx-auto h-screen md:h-auto bg-white md:bg-transparent dark:bg-gray-900 dark:md:bg-transparent">
-              <div className="flex-grow flex-col md:flex-row relative flex gap-6 justify-center pt-10 md:pt-0">
+            <div className="md:flex mx-auto h-screen md:h-auto bg-white md:bg-transparent dark:bg-gray-900 dark:md:bg-transparent">
+              <div className="flex-grow flex-col md:flex-row relative flex gap-4 justify-center pt-10 md:pt-0">
                 <Image src={logoLight} alt='' width={'80'} height={'54'} className="rounded-lg absolute top-3 left-2  hidden dark:block md:dark:hidden cursor-pointer" draggable="false" />
                 <Image src={Logodark} alt='' width={'80'} height={'54'} className="rounded-lg absolute top-3 left-2  dark:hidden md:hidden cursor-pointer" draggable="false" />
                 
@@ -63,11 +63,10 @@ function Navigation({ active }) {
                 {/* <NavLinks route="/terms-conditions" title="Terms-Conditions" active={active} /> */}
                 <NavLinks route="/faq" title="Faq" active={active} />
                 <NavLinks route="/blogs" title="Blog" active={active} />
-                <div className="relative w-full bottom-1 p-2"><RiderBtn /></div>
+                <div className=" md:hidden relative w-full bottom-1 p-2"><RiderBtn /></div>
               </div>
               <div className="flex py-12 md:py-0 px-4 relative md:px-0 gap-3 items-center">
                 <div className="hidden md:block absolute right-14 w-40"><RiderBtn /></div>
-                {/* <div>extra</div> */}
                 <ThemeToggler isDark={() => setIsDark(!isDark)} />
               </div>
             </div>
