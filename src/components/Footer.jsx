@@ -37,7 +37,7 @@ function Footer() {
                     </div>
                 </div>
                 <hr className="w-[98%] border-gray-600 mx-auto h-[1px]" />
-                <div className="lg:flex space-y-4 items-center gap-4">
+                <div className="lg:flex space-y-12 items-center gap-4">
                     <div className="flex-grow space-y-4">
                         <div className="text-3xl pb-3 text-white">
                             <Image src={logoLight} alt='' width={'100'} height={'104'} className="rounded-lg mx-auto sm:mx-0 dark:block cursor-pointer" draggable="false" />
