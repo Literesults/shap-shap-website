@@ -55,7 +55,7 @@ function Navigation({ active }) {
               <div className="flex-grow flex-col md:flex-row relative flex gap-16 md:gap-4 justify-center pt-10 md:pt-0">
                 <Image src={logoLight} alt='' width={'80'} height={'54'} className="rounded-lg absolute top-3 left-2  hidden dark:block md:dark:hidden cursor-pointer" draggable="false" />
                 <Image src={Logodark} alt='' width={'80'} height={'54'} className="rounded-lg absolute top-3 left-2  dark:hidden md:hidden cursor-pointer" draggable="false" />
-                <div className="flex-grow flex-col top-12 md:flex-row relative flex gap-2 justify-center">
+                <div className="flex-grow flex-col top-12 md:top-0 md:flex-row relative flex gap-2 justify-center">
                   <NavLinks route="/" title="Home" active={active} />
                   <NavLinks route="/about" title="About Us" active={active} />
                   <NavLinks route="/contactus" title="Contact us" active={active} />
