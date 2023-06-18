@@ -176,7 +176,7 @@ function Termsconditions() {
           <div className="text-lg font-bold dark:text-white">Policy</div>
           <div className="space-y-5 text-sm md:text-base">
             <p>Effective Date: [Insert Date]</p>
-            <p>This Privacy Policy governs the manner in which Shap Cab collects, uses, maintains, and discloses information collected from users (referred to as &quot;you&quot; or &quot;users&quot;) of the Shap Cab mobile application (&quot;App&quot;). This Privacy Policy applies to the App and all products and services offered by Sharp Ride.</p>
+            <p>This Privacy Policy governs the manner in which Shap Cab collects, uses, maintains, and discloses information collected from users (referred to as &quot;you&quot; or &quot;users&quot;) of the Shap Cab mobile application (&quot;App&quot;). This Privacy Policy applies to the App and all products and services offered by Shap Cab.</p>
             <div className="space-y-3">
               {
                 policies.map((policy, index) => (

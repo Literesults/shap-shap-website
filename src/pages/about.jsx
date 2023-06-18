@@ -97,7 +97,7 @@ function About() {
             <div className="text-yellow-500">Priority</div>
           </div>
           <div className="text-gray-400 max-w-md">
-            Your safety is our utmost priority. We go to great lengths to ensure that every ride you take with Shap Ride is secure and comfortable. Our drivers undergo rigorous background checks, and our vehicles are meticulously maintained to guarantee your peace of mind throughout your journey.
+            Your safety is our utmost priority. We go to great lengths to ensure that every ride you take with Shap Cab is secure and comfortable. Our drivers undergo rigorous background checks, and our vehicles are meticulously maintained to guarantee your peace of mind throughout your journey.
           </div>
         </div>
         <div data-aos="fade-right" className="">
@@ -117,7 +117,7 @@ function About() {
               <div className="text-yellow-500">Service, Every Time</div>
             </div>
             <div className="text-gray-50 max-w-md">
-              We believe that exceptional service is the key to customer satisfaction. Our team of professional drivers is dedicated to providing you with the highest standard of service, ensuring that each ride exceeds your expectations. From prompt pickups to courteous assistance, we strive to make your experience with Shap Ride unforgettable.
+              We believe that exceptional service is the key to customer satisfaction. Our team of professional drivers is dedicated to providing you with the highest standard of service, ensuring that each ride exceeds your expectations. From prompt pickups to courteous assistance, we strive to make your experience with Shap Cab unforgettable.
             </div>
           </div>
           <div data-aos="fade-left" className="">
@@ -137,7 +137,7 @@ function About() {
             <div className="text-yellow-500">Communities</div>
           </div>
           <div className="text-gray-400 max-w-md">
-            At Shap Ride, we understand that transportation plays a vital role in connecting people and communities. Whether you&apos;re traveling to work, exploring a new city, or simply enjoying a night out, our platform is designed to bring people together, foster connections, and make your journeys more enjoyable.
+            At Shap Cab, we understand that transportation plays a vital role in connecting people and communities. Whether you&apos;re traveling to work, exploring a new city, or simply enjoying a night out, our platform is designed to bring people together, foster connections, and make your journeys more enjoyable.
           </div>
         </div>
         <div data-aos="fade-right" className="">
@@ -151,11 +151,11 @@ function About() {
         <div className="grid p-3 sm:grid-cols-2 gap-8 items-center mx-auto max-w-5xl">
           <div data-aos="fade-right" className="space-y-5">
             <div className="font-[1000] text-3xl md:text-5xl">
-              <div className="text-white">Join the Shap Ride</div>
+              <div className="text-white">Join the Shap Cab</div>
               <div className="text-yellow-500">Revolution</div>
             </div>
             <div className="text-gray-50 max-w-md">
-              Experience the future of transportation with Sharp Ride. Download our app today and unlock a world of seamless journeys, reliable service, and unforgettable experiences. Join us as we redefine transportation and create a better way to travel.
+              Experience the future of transportation with Shap Cab. Download our app today and unlock a world of seamless journeys, reliable service, and unforgettable experiences. Join us as we redefine transportation and create a better way to travel.
             </div>
           </div>
           <div data-aos="fade-left" className="">

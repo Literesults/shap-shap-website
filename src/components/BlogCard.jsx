@@ -16,7 +16,7 @@ function BlogCard({ data }) {
             </div>
             <div className="text-xs text-gray-400">{time} || by {data.author_name}</div>
             <div className="font-[1000] dark:text-white">{data.title}</div>
-            <div className="text-sm text-gray-400 trunck-text">{data.body}</div>
+            <div className="text-sm text-gray-400 trunck-text"  dangerouslySetInnerHTML={{ __html: data.body }} />
         </Link>
     )
 }

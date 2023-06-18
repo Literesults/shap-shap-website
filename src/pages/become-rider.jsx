@@ -21,11 +21,11 @@ function BecomeRider() {
     const process = [
         {
             step: "Flexibility",
-            Description: "Set your own schedule and drive whenever it works for you. Whether you're looking for a full-time gig or a part-time opportunity, Shap Ride offers the flexibility to fit your lifestyle."
+            Description: "Set your own schedule and drive whenever it works for you. Whether you're looking for a full-time gig or a part-time opportunity, Shap Cab offers the flexibility to fit your lifestyle."
         },
         {
             step: "Earn More",
-            Description: "With competitive fares and incentives, driving with Shap Ride can be a lucrative source of income. The more you drive, the more you can earn."
+            Description: "With competitive fares and incentives, driving with Shap Cab can be a lucrative source of income. The more you drive, the more you can earn."
         },
         {
             step: "Supportive Community",
@@ -43,7 +43,7 @@ function BecomeRider() {
     const process2 = [
         {
             step: "Sign Up and Verify",
-            Description: "Begin your journey as a Sharp Ride driver by signing up on our platform. Fill out a simple registration form and provide the necessary information. Once submitted, our team will verify your details to ensure the safety and security of our community."
+            Description: "Begin your journey as a Shap Cab driver by signing up on our platform. Fill out a simple registration form and provide the necessary information. Once submitted, our team will verify your details to ensure the safety and security of our community."
         },
         {
             step: "Complete Your Profile",
@@ -55,7 +55,7 @@ function BecomeRider() {
         },
         {
             step: "Start Driving and Earning",
-            Description: "Once your profile is approved, you're ready to hit the road! Log into the Sharp Ride driver app and start accepting ride requests. Navigate the city with the help of our user-friendly app, picking up passengers and providing them with exceptional service. Enjoy the flexibility to choose your own working hours and maximize your earnings."
+            Description: "Once your profile is approved, you're ready to hit the road! Log into the Shap Cab driver app and start accepting ride requests. Navigate the city with the help of our user-friendly app, picking up passengers and providing them with exceptional service. Enjoy the flexibility to choose your own working hours and maximize your earnings."
         }
     ]
     const requirements = [

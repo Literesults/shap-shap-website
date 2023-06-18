@@ -23,7 +23,7 @@ function Journey() {
                                 <div className="">Today</div>
                             </div>
                             <p className="text-gray-300 text-sm max-w-md">
-                                Ready to embark on an exciting journey as a Sharp Ride driver? Join our driver community today and experience the freedom, flexibility, and rewards that come with being a part of our platform. Sign up now and start making a difference on the road.
+                                Ready to embark on an exciting journey as a Shap Cab driver? Join our driver community today and experience the freedom, flexibility, and rewards that come with being a part of our platform. Sign up now and start making a difference on the road.
                             </p>
                         </div>
                         <div className="flex gap-5">
