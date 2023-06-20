@@ -12,10 +12,12 @@ function Faq() {
       AOS.init();
   },[])
   const [faq, setFaq] = useState([])
+  const [loadingFaq, setLoadingFaq] = useState(true)
   const base = 'https://api.hmxexpress.com/api';
 
   const fetchFaq = () => {
     axios.post(`${base}/support/fetch-faq`).then((res) => {
+      setLoadingFaq(false)
       setFaq(res.data.data.faqs);
     })
   }
@@ -52,7 +54,7 @@ function Faq() {
           <div className="[background:linear-gradient(90.06deg,#050400_-1.71%,rgba(87,70,0,0.25)_56.42%,rgba(151,120,0,0.83)_113.82%)] space-y-6 py-20">
             <div className="text-center text-4xl font-bold text-white capitalize"  >Got Questions? We&apos;ve Got Answers!</div>
             <div className="max-w-2xl mx-auto text-gray-200 text-center">
-            Welcome to our FAQ page, your go-to resource for answers to common queries and concerns. We understand that navigating a new service can bring up uncertainties, so we&apos;ve compiled a comprehensive list of frequently asked questions to provide you with the information you need. From booking procedures to payment options, find clarity and peace of mind in our detailed responses.
+              Welcome to our FAQ page, your go-to resource for answers to common queries and concerns. We understand that navigating a new service can bring up uncertainties, so we&apos;ve compiled a comprehensive list of frequently asked questions to provide you with the information you need. From booking procedures to payment options, find clarity and peace of mind in our detailed responses.
             </div>
           </div>
         </div>
@@ -70,6 +72,9 @@ function Faq() {
               <div className="">
                 <div className=" bg-white dark:bg-gray-600 shadow-md rounded-md border dark:border-gray-700 p-3">
                   <div className="divide-y allDetails">
+                    {
+                      loadingFaq && <div className="dark:text-white text-center text-xl py-2">loading...</div>
+                    }
                     {
                       faq.map((data, i) => (
                         <div data-aos="fade-up" className="p-3 flex" key={i} role="button" onClick={() => dropDown(i)}>

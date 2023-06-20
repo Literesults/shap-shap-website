@@ -8,15 +8,18 @@ import axios from 'axios'
 import { AiOutlineFileSearch } from 'react-icons/ai'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import Preloader from '@/components/Preloader'
 
 function Index() {
     const [recentBlog, setRecentBlog] = useState([])
     const base = 'https://api.hmxexpress.com/api';
     const [firstBlog, setFirstBlog] = useState({})
+    const [loadingBlog, setLoadingBlog] = useState(true)
     const time = firstBlog.created_at?.split("T")[0]
 
     const fetchFaq = () => {
         axios.post(`${base}/blog/frontend-fetch-posts`).then((res) => {
+            setLoadingBlog(false)
             setRecentBlog(res.data.data.posts);
             setFirstBlog(res.data.data.posts[0]);
         })
@@ -31,12 +34,20 @@ function Index() {
         <Layout active={'Blog'}>
             <BlogBanner />
             {
+                loadingBlog && (
+                    <div className=" h-96 flex flex-col w-full items-center justify-center">
+                        <div className="spinner bg-black dark:bg-white"></div>
+                        <div className="dark:text-white">Loading Blogs</div>
+                    </div>
+                )
+            }
+            {
                 Object.keys(firstBlog).length > 0 && (
                     <div className="grid md:grid-cols-2 gap-5 items-center py-16 max-w-7xl mx-auto p-3 ">
                         <div data-aos="fade-left" className="md:order-1 space-y-6">
                             <div className="text-shap-800">{firstBlog.category}</div>
                             <div className="dark:text-white font-[1000] text-3xl lg:text-5xl">{firstBlog.title}</div>
-                            <div className="text-gray-400">{firstBlog.body}</div>
+                            <div className="text-gray-400"  dangerouslySetInnerHTML={{ __html: firstBlog.body }} />
                             <div className="text-shap-800">{time} - by {firstBlog.author_name}</div>
                         </div>
                         <div data-aos="fade-right" className="">
