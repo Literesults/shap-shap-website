@@ -36,7 +36,7 @@ function Blog() {
                 </div>
                 <div className="space-y-6 max-w-5xl mx-auto">
                     <div className="text-sm text-shap-800"> {blog.created_at?.split("T")[0]} - by {blog.author_name}</div>
-                    <div className="dark:text-white">{blog.body}</div>
+                    <div className="dark:text-white"  dangerouslySetInnerHTML={{ __html: blog.body }} />
                     <div className="flex">
                         <div className="text-shap-800 flex-grow"></div>
                         <div className="bg-[linear-gradient(180deg,#E09800_0%,#322200_100%)] text-white p-3"><HiShare /> </div>

@@ -71,7 +71,7 @@ function Footer() {
                             <div className="flex flex-col gap-2 text-gray-400">
                                 <Link href={'/drivers-agreement'} className="cursor-pointer hover:text-white">Drivers Agreement</Link>
                                 <Link href={'/users-agreement'} className="cursor-pointer hover:text-white">Users Agreement</Link>
-                                <Link href={'/terms-conditions#policy'} className="cursor-pointer hover:text-white">Policy</Link>
+                                <Link href={'/policy'} className="cursor-pointer hover:text-white">Policy</Link>
                             </div>
                         </div>
                     </div>
