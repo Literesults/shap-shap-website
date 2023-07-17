@@ -2,7 +2,7 @@ import FormInput from '@/components/FormInput'
 import FormTextArea from '@/components/FormTextArea'
 import Layout from '@/components/Layout'
 import Image from 'next/image'
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import { BiUserCircle } from 'react-icons/bi'
 import extraImg from '../../public/images/business-desktop.png'
 import { serialize } from '@/hooks/Serilize'
@@ -16,17 +16,20 @@ function Contactus() {
     useEffect(() => {
         AOS.init();
     }, [])
-    const sendFeedBack = (e) => {
+    const [isLoading,setisLoading] = useState(false)
+    const sendFeedBack = async (e) => {
+        setisLoading(true)
         e.preventDefault()
         const data = serialize(e.target)
         const base = 'https://api.hmxexpress.com/api';
         const form = document.getElementById('feedBackForm')
-        axios.post(`${base}/support/send-feedback`, data).then((res) => {
+        await axios.post(`${base}/support/send-feedback`, data).then((res) => {
             notifier({ type: "success", message: res.data.message, autoDismissTimeout: 5000 });
             form.reset()
         }).catch((error) => {
             console.log(error.response);
         })
+        setisLoading(false)
     }
 
     return (
@@ -72,8 +75,9 @@ function Contactus() {
                                     <FormInput Icon={<BiUserCircle size={'24px'} />} name={'name'} placeholder={'Enter Fullname'} type={'text'} />
                                     <FormInput Icon={<BiUserCircle size={'24px'} />} name={'contact_info'} placeholder={'Enter Phone or Mail'} type={'text'} />
                                     <FormTextArea Icon={<BiUserCircle size={'24px'} />} name={'message'} placeholder={'Write Your Message here'} />
-                                    <button type="submit" className="bg-gray-900 w-full rounded-lg text-white text-center py-2 uppercase text-lg cursor-pointer hover:bg-black">
-                                        drop message
+                                    <button disabled={isLoading} type="submit" className="bg-gray-900 disabled:cursor-default disabled:bg-gray-400 w-full rounded-lg text-white text-center py-2 uppercase text-lg cursor-pointer hover:bg-black">
+                                        {isLoading ? 'Sending Message':'drop message'}
+                                        
                                     </button>
                                 </form>
                             </div>
