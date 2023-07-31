@@ -3,6 +3,30 @@
 @tailwind utilities;
 
 
+@layer base {
+    :root {
+      font-size: 62.5%; /* 62.5% of 16px = 10px */
+    }
+  
+    html,
+    body {
+      @apply bg-rb-light-100 dark:bg-rb-dark-50 w-full max-w-screen-hd mx-auto;
+    }
+  
+    select,
+    select > option {
+      background: none;
+    }
+  }
+  
+ 
+ *{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+
+ 
 .spinner {
     width: 56px;
     height: 56px;
