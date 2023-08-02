@@ -12,7 +12,7 @@ import Preloader from '@/components/Preloader'
 
 function Index() {
     const [recentBlog, setRecentBlog] = useState([])
-    const base = 'https://api.hmxexpress.com/api';
+    const base = process.env.NEXT_PUBLIC_API_BASE_URL;
     const [firstBlog, setFirstBlog] = useState({})
     const [loadingBlog, setLoadingBlog] = useState(true)
     const time = firstBlog.created_at?.split("T")[0]

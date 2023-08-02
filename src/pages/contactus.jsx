@@ -21,7 +21,7 @@ function Contactus() {
         setisLoading(true)
         e.preventDefault()
         const data = serialize(e.target)
-        const base = 'https://api.hmxexpress.com/api';
+        const base = process.env.NEXT_PUBLIC_API_BASE_URL;
         const form = document.getElementById('feedBackForm')
         await axios.post(`${base}/support/send-feedback`, data).then((res) => {
             notifier({ type: "success", message: res.data.message, autoDismissTimeout: 5000 });

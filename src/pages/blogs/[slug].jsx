@@ -9,7 +9,7 @@ import { HiShare } from 'react-icons/hi'
 function Blog() {
     const router = useRouter()
     const { slug } = router.query
-    const base = 'https://api.hmxexpress.com/api';
+    const base = process.env.NEXT_PUBLIC_API_BASE_URL;
     const [blog, setBlog] = useState({})
     useEffect(() => {
         axios.post(`${base}/blog/frontend-fetch-a-post`, { slug }).then((res) => {

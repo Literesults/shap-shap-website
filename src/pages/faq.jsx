@@ -13,7 +13,7 @@ function Faq() {
   },[])
   const [faq, setFaq] = useState([])
   const [loadingFaq, setLoadingFaq] = useState(true)
-  const base = 'https://api.hmxexpress.com/api';
+  const base = process.env.NEXT_PUBLIC_API_BASE_URL;
 
   const fetchFaq = () => {
     axios.post(`${base}/support/fetch-faq`).then((res) => {

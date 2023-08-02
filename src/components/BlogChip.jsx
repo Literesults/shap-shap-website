@@ -5,7 +5,7 @@ import axios from 'axios';
 
 function BlogChip() {
     const [recentBlog,setRecentBlog] = useState([])
-    const base = 'https://api.hmxexpress.com/api';
+    const base = process.env.NEXT_PUBLIC_API_BASE_URL;
     const fetchFaq = () => {
         axios.post(`${base}/blog/frontend-fetch-posts`).then((res) => {
             console.log(res);
