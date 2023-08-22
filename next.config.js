@@ -6,7 +6,7 @@ const nextConfig = {
     remotePatterns: [
       {
         protocol: 'https',
-        hostname: 'api.hmxexpress.com',
+        hostname: 'api.shapcab.com',
         port: '',
         pathname: '/*/**',
       }
