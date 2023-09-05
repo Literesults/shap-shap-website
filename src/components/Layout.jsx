@@ -16,11 +16,11 @@ function Layout({ children, active }) {
 
     return (
         <div className="overflow-x-hidden">
-            {/* <Head>
+            <Head>
                 <title style="text-transform: capitalize;">{active}</title>
-                <meta name='title' content='https://shapcab.com' />
-                <mata name='shapcab.com' />
-            </Head> */}
+                {/* <meta name='title' content='https://shapcab.com' />
+                <mata name='shapcab.com' /> */}
+            </Head>
             {ready && <Notification />}
             <Navigation active={active} />
             <div className="min-h-screen">{children}</div>
