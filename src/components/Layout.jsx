@@ -19,6 +19,7 @@ function Layout({ children, active }) {
             <Head>
                 <title style="text-transform: capitalize;">{active}</title>
                 <meta name='title' content='https://shapcab.com' />
+                <mata name='shapcab.com' />
             </Head>
             {ready && <Notification />}
             <Navigation active={active} />
