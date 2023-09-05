@@ -4,8 +4,6 @@ import Footer from './Footer'
 import ContactCard from './ContactCard'
 import Notification from 'react-toast-notifier';
 import { useRouter } from 'next/router'
-import Head from 'next/head';
-
 
 function Layout({ children, active }) {
     const router = useRouter()
@@ -16,11 +14,6 @@ function Layout({ children, active }) {
 
     return (
         <div className="overflow-x-hidden">
-            <Head>
-                <title style="text-transform: capitalize;">{active}</title>
-                {/* <meta name='title' content='https://shapcab.com' />
-                <mata name='shapcab.com' /> */}
-            </Head>
             {ready && <Notification />}
             <Navigation active={active} />
             <div className="min-h-screen">{children}</div>
