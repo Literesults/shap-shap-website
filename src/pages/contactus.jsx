@@ -27,7 +27,7 @@ function Contactus() {
             notifier({ type: "success", message: res.data.message, autoDismissTimeout: 5000 });
             form.reset()
         }).catch((error) => {
-            console.log(error.response);
+            // console.log(error.response);
         })
         setisLoading(false)
     }

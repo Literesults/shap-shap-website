@@ -15,7 +15,7 @@ function Blog() {
         axios.post(`${base}/blog/frontend-fetch-a-post`, { slug }).then((res) => {
             setBlog(res.data.data.post);
         }).catch((err) => {
-            console.log(err);
+            // console.log(err);
         });
     }, [router.query.name, router.isReady, slug])
     return (

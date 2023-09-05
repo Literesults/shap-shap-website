@@ -47,7 +47,7 @@ function Index() {
                         <div data-aos="fade-left" className="md:order-1 space-y-6">
                             <div className="text-shap-800">{firstBlog.category}</div>
                             <div className="dark:text-white font-[1000] text-3xl lg:text-5xl">{firstBlog.title}</div>
-                            <div className="text-gray-400"  dangerouslySetInnerHTML={{ __html: firstBlog.body }} />
+                            <div className="text-gray-400 trunck-text-long"  dangerouslySetInnerHTML={{ __html: firstBlog.body }} />
                             <div className="text-shap-800">{time} - by {firstBlog.author_name}</div>
                         </div>
                         <div data-aos="fade-right" className="">

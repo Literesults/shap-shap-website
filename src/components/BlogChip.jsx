@@ -8,7 +8,7 @@ function BlogChip() {
     const base = process.env.NEXT_PUBLIC_API_BASE_URL;
     const fetchFaq = () => {
         axios.post(`${base}/blog/frontend-fetch-posts`).then((res) => {
-            console.log(res);
+            
             setRecentBlog(res.data.data.posts.slice(0, 3));
         })
     }

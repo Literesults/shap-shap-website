@@ -10,7 +10,7 @@ import Services from "@/components/Services";
 export default function Home() {
 
   return (
-    <Layout active={'home'}>
+    <Layout active={'Home'}>
       <Banner />
       <SubBanner />
       <GetAppChip />
